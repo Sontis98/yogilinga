@@ -17,8 +17,8 @@ description: "Science-backed reviews of premium sexual wellness products, body-s
       Independent reviews, expert guides, and evidence-based wellness articles for adults who take their health seriously. No judgment — just knowledge.
     </p>
     <div class="hero-cta">
-      <a href="/reviews" class="btn-primary">Explore Reviews</a>
-      <a href="/guides" class="btn-ghost">Buying Guides</a>
+      <a href="{{ '/reviews/' | relative_url }}" class="btn-primary">Explore Reviews</a>
+      <a href="{{ '/guides/' | relative_url }}" class="btn-ghost">Buying Guides</a>
     </div>
   </div>
 
@@ -43,7 +43,7 @@ description: "Science-backed reviews of premium sexual wellness products, body-s
 <section class="section-wrap" aria-labelledby="reviews-heading">
   <div class="section-header">
     <h2 class="section-title" id="reviews-heading">Latest Reviews</h2>
-    <a href="/reviews" class="section-link">All reviews →</a>
+    <a href="{{ '/reviews/' | relative_url }}" class="section-link">All reviews →</a>
   </div>
 
   <div class="cards-grid">
@@ -76,7 +76,7 @@ description: "Science-backed reviews of premium sexual wellness products, body-s
       {% endfor %}
     {% else %}
       <!-- Placeholder cards until you add content -->
-      <a href="/reviews" class="card" style="text-decoration: none;">
+      <a href="{{ '/reviews/' | relative_url }}" class="card" style="text-decoration: none;">
         <div class="card-thumb-placeholder card-thumb-1">
           <span class="card-icon-letter">✦</span>
         </div>
@@ -90,7 +90,7 @@ description: "Science-backed reviews of premium sexual wellness products, body-s
           </div>
         </div>
       </a>
-      <a href="/reviews" class="card" style="text-decoration: none;">
+      <a href="{{ '/reviews/' | relative_url }}" class="card" style="text-decoration: none;">
         <div class="card-thumb-placeholder card-thumb-2">
           <span class="card-icon-letter">◎</span>
         </div>
@@ -104,7 +104,7 @@ description: "Science-backed reviews of premium sexual wellness products, body-s
           </div>
         </div>
       </a>
-      <a href="/reviews" class="card" style="text-decoration: none;">
+      <a href="{{ '/reviews/' | relative_url }}" class="card" style="text-decoration: none;">
         <div class="card-thumb-placeholder card-thumb-3">
           <span class="card-icon-letter">◇</span>
         </div>
@@ -133,7 +133,7 @@ description: "Science-backed reviews of premium sexual wellness products, body-s
       <p class="featured-excerpt">
         Neuroscience research from Stanford and the Journal of Sexual Medicine reveals surprising data about dopamine, oxytocin, cortisol regulation, and REM sleep quality. Here's what the peer-reviewed evidence actually says.
       </p>
-      <a href="/wellness/brain-science-orgasm" class="read-more-link">Read the full article →</a>
+      <a href="{{ '/wellness/brain-science-orgasm/' | relative_url }}" class="read-more-link">Read the full article →</a>
     </div>
 
     <aside class="featured-sidebar" aria-label="Recent articles">
@@ -171,7 +171,7 @@ description: "Science-backed reviews of premium sexual wellness products, body-s
 <section class="section-wrap" aria-labelledby="wellness-heading">
   <div class="section-header">
     <h2 class="section-title" id="wellness-heading">The Journal</h2>
-    <a href="/wellness" class="section-link">All articles →</a>
+    <a href="{{ '/wellness/' | relative_url }}" class="section-link">All articles →</a>
   </div>
 
   <div class="cards-grid">
@@ -194,7 +194,7 @@ description: "Science-backed reviews of premium sexual wellness products, body-s
       </a>
       {% endfor %}
     {% else %}
-      <a href="/wellness" class="card" style="text-decoration: none;">
+      <a href="{{ '/wellness/' | relative_url }}" class="card" style="text-decoration: none;">
         <div class="card-thumb-placeholder card-thumb-1"><span class="card-icon-letter">◎</span></div>
         <div class="card-body">
           <p class="card-tag">Neuroscience</p>
@@ -203,7 +203,7 @@ description: "Science-backed reviews of premium sexual wellness products, body-s
           <div class="card-meta"><span>The Journal</span><span class="card-read-more">Read →</span></div>
         </div>
       </a>
-      <a href="/wellness" class="card" style="text-decoration: none;">
+      <a href="{{ '/wellness/' | relative_url }}" class="card" style="text-decoration: none;">
         <div class="card-thumb-placeholder card-thumb-2"><span class="card-icon-letter">◇</span></div>
         <div class="card-body">
           <p class="card-tag">Mental Health</p>
@@ -212,7 +212,7 @@ description: "Science-backed reviews of premium sexual wellness products, body-s
           <div class="card-meta"><span>The Journal</span><span class="card-read-more">Read →</span></div>
         </div>
       </a>
-      <a href="/wellness" class="card" style="text-decoration: none;">
+      <a href="{{ '/wellness/' | relative_url }}" class="card" style="text-decoration: none;">
         <div class="card-thumb-placeholder card-thumb-3"><span class="card-icon-letter">✦</span></div>
         <div class="card-body">
           <p class="card-tag">Body Positivity</p>
@@ -220,7 +220,3 @@ description: "Science-backed reviews of premium sexual wellness products, body-s
           <p class="card-excerpt">Cultural analysis of the shift from shame to self-care in sexual wellness discourse among 18–34 year olds.</p>
           <div class="card-meta"><span>The Journal</span><span class="card-read-more">Read →</span></div>
         </div>
-      </a>
-    {% endif %}
-  </div>
-</section>
