@@ -1,0 +1,226 @@
+---
+layout: default
+title: "Sexual Wellness & High-Tech Toy Reviews"
+description: "Science-backed reviews of premium sexual wellness products, body-safe guides, and evidence-based articles on sexual health — for curious, health-conscious adults."
+---
+
+<!-- HERO -->
+<section class="hero" aria-labelledby="hero-heading">
+  <div class="hero-content">
+    <p class="hero-eyebrow">Sexual Wellness · High-Tech Toys · Science-Backed</p>
+    <h1 class="hero-heading" id="hero-heading">
+      Pleasure as<br>
+      <em>self-care.</em><br>
+      Backed by science.
+    </h1>
+    <p class="hero-sub">
+      Independent reviews, expert guides, and evidence-based wellness articles for adults who take their health seriously. No judgment — just knowledge.
+    </p>
+    <div class="hero-cta">
+      <a href="/reviews" class="btn-primary">Explore Reviews</a>
+      <a href="/guides" class="btn-ghost">Buying Guides</a>
+    </div>
+  </div>
+
+  <div class="hero-visual" aria-hidden="true">
+    <div class="orb">
+      <div class="orb-text">
+        wellness<br>&amp;<br>pleasure
+      </div>
+    </div>
+    <div class="hero-badge top-right">
+      <p class="badge-label">Independent Reviews</p>
+      <p class="badge-value">120+ Products</p>
+    </div>
+    <div class="hero-badge bottom-left">
+      <p class="badge-label">Always Body-Safe</p>
+      <p class="badge-value">100% Tested</p>
+    </div>
+  </div>
+</section>
+
+<!-- LATEST REVIEWS -->
+<section class="section-wrap" aria-labelledby="reviews-heading">
+  <div class="section-header">
+    <h2 class="section-title" id="reviews-heading">Latest Reviews</h2>
+    <a href="/reviews" class="section-link">All reviews →</a>
+  </div>
+
+  <div class="cards-grid">
+    {% assign reviews = site.reviews | sort: 'date' | reverse | limit: 3 %}
+    {% if reviews.size > 0 %}
+      {% for review in reviews %}
+      <a href="{{ review.url | relative_url }}" class="card" style="text-decoration: none;">
+        {% if review.image %}
+        <div class="card-thumb">
+          <img src="{{ review.image | relative_url }}" alt="{{ review.title }}" loading="lazy">
+        </div>
+        {% else %}
+        <div class="card-thumb-placeholder card-thumb-{{ forloop.index }}">
+          <span class="card-icon-letter">✦</span>
+        </div>
+        {% endif %}
+        <div class="card-body">
+          <div style="display: flex; justify-content: space-between; align-items: center;">
+            <p class="card-tag">{{ review.category | default: "Review" }}</p>
+            {% if review.score %}<span class="score-badge">{{ review.score }}/10</span>{% endif %}
+          </div>
+          <h3 class="card-title">{{ review.title }}</h3>
+          <p class="card-excerpt">{{ review.excerpt | strip_html | truncate: 120 }}</p>
+          <div class="card-meta">
+            <span>{{ review.date | date: "%b %-d, %Y" }}</span>
+            <span class="card-read-more">Read →</span>
+          </div>
+        </div>
+      </a>
+      {% endfor %}
+    {% else %}
+      <!-- Placeholder cards until you add content -->
+      <a href="/reviews" class="card" style="text-decoration: none;">
+        <div class="card-thumb-placeholder card-thumb-1">
+          <span class="card-icon-letter">✦</span>
+        </div>
+        <div class="card-body">
+          <p class="card-tag">Vibrator · App-Controlled</p>
+          <h3 class="card-title">We-Vibe Chorus Review: The Best Couples Toy of 2025?</h3>
+          <p class="card-excerpt">After 3 weeks of testing, we break down everything about the We-Vibe Chorus — app, motor, materials, and whether the premium price is justified.</p>
+          <div class="card-meta">
+            <span class="score-badge">9.1/10</span>
+            <span class="card-read-more">Read →</span>
+          </div>
+        </div>
+      </a>
+      <a href="/reviews" class="card" style="text-decoration: none;">
+        <div class="card-thumb-placeholder card-thumb-2">
+          <span class="card-icon-letter">◎</span>
+        </div>
+        <div class="card-body">
+          <p class="card-tag">Sonic Wave · Premium</p>
+          <h3 class="card-title">Womanizer Premium 2 vs. Satisfyer Pro 2: Full Comparison</h3>
+          <p class="card-excerpt">Two of the most popular sonic wave toys head to head. We test suction intensity, noise level, battery life, and body-safe certification claims.</p>
+          <div class="card-meta">
+            <span class="score-badge">8.7/10</span>
+            <span class="card-read-more">Read →</span>
+          </div>
+        </div>
+      </a>
+      <a href="/reviews" class="card" style="text-decoration: none;">
+        <div class="card-thumb-placeholder card-thumb-3">
+          <span class="card-icon-letter">◇</span>
+        </div>
+        <div class="card-body">
+          <p class="card-tag">Smart Heating · Luxury</p>
+          <h3 class="card-title">Lelo Hugo 2 Review: Is the Smart Heating Worth $249?</h3>
+          <p class="card-excerpt">Lelo's latest prostate massager adds smart heating and a refined app. We test whether these upgrades justify the flagship price tag.</p>
+          <div class="card-meta">
+            <span class="score-badge">8.4/10</span>
+            <span class="card-read-more">Read →</span>
+          </div>
+        </div>
+      </a>
+    {% endif %}
+  </div>
+</section>
+
+<!-- FEATURED EDITORIAL -->
+<section class="featured-section" aria-labelledby="featured-heading">
+  <div class="featured-inner">
+    <div class="featured-main">
+      <p class="featured-tag">Featured Article</p>
+      <h2 class="featured-heading" id="featured-heading">
+        What happens to<br>your brain during<br><em>orgasm</em> — the science.
+      </h2>
+      <p class="featured-excerpt">
+        Neuroscience research from Stanford and the Journal of Sexual Medicine reveals surprising data about dopamine, oxytocin, cortisol regulation, and REM sleep quality. Here's what the peer-reviewed evidence actually says.
+      </p>
+      <a href="/wellness/brain-science-orgasm" class="read-more-link">Read the full article →</a>
+    </div>
+
+    <aside class="featured-sidebar" aria-label="Recent articles">
+      {% assign recent_posts = site.posts | limit: 3 %}
+      {% if recent_posts.size > 0 %}
+        {% for post in recent_posts %}
+        <a href="{{ post.url | relative_url }}" class="mini-post" style="display: block; text-decoration: none;">
+          <p class="mini-tag">{{ post.categories | first }}</p>
+          <h3 class="mini-title">{{ post.title }}</h3>
+          <p class="mini-meta">{{ post.read_time | default: "6" }} min read · {{ post.author | default: "Editorial" }}</p>
+        </a>
+        {% endfor %}
+      {% else %}
+        <div class="mini-post">
+          <p class="mini-tag">Wellness · Science</p>
+          <h3 class="mini-title">Solo Play & Sleep: What 12 Studies Actually Found</h3>
+          <p class="mini-meta">8 min read · Wellness Research</p>
+        </div>
+        <div class="mini-post">
+          <p class="mini-tag">Guide · Materials</p>
+          <h3 class="mini-title">How to Spot Fake Medical Silicone: The Flame Test & 4 Other Methods</h3>
+          <p class="mini-meta">5 min read · Safety Desk</p>
+        </div>
+        <div class="mini-post">
+          <p class="mini-tag">Lifestyle · Mindfulness</p>
+          <h3 class="mini-title">Mindful Masturbation: Combining Breathwork and Solo Play for Stress Relief</h3>
+          <p class="mini-meta">11 min read · Editorial Team</p>
+        </div>
+      {% endif %}
+    </aside>
+  </div>
+</section>
+
+<!-- WELLNESS POSTS -->
+<section class="section-wrap" aria-labelledby="wellness-heading">
+  <div class="section-header">
+    <h2 class="section-title" id="wellness-heading">The Journal</h2>
+    <a href="/wellness" class="section-link">All articles →</a>
+  </div>
+
+  <div class="cards-grid">
+    {% assign wellness_posts = site.posts | where: "category", "wellness" | limit: 3 %}
+    {% if wellness_posts.size > 0 %}
+      {% for post in wellness_posts %}
+      <a href="{{ post.url | relative_url }}" class="card" style="text-decoration: none;">
+        <div class="card-thumb-placeholder card-thumb-{{ forloop.index }}">
+          <span class="card-icon-letter">◎</span>
+        </div>
+        <div class="card-body">
+          <p class="card-tag">{{ post.tags | first | default: "Wellness" }}</p>
+          <h3 class="card-title">{{ post.title }}</h3>
+          <p class="card-excerpt">{{ post.excerpt | strip_html | truncate: 100 }}</p>
+          <div class="card-meta">
+            <span>{{ post.date | date: "%b %-d, %Y" }}</span>
+            <span class="card-read-more">Read →</span>
+          </div>
+        </div>
+      </a>
+      {% endfor %}
+    {% else %}
+      <a href="/wellness" class="card" style="text-decoration: none;">
+        <div class="card-thumb-placeholder card-thumb-1"><span class="card-icon-letter">◎</span></div>
+        <div class="card-body">
+          <p class="card-tag">Neuroscience</p>
+          <h3 class="card-title">The Oxytocin Effect: Why Orgasms Help You Sleep Deeper</h3>
+          <p class="card-excerpt">A look at peer-reviewed research on post-orgasm hormone release and its measurable impact on sleep architecture.</p>
+          <div class="card-meta"><span>The Journal</span><span class="card-read-more">Read →</span></div>
+        </div>
+      </a>
+      <a href="/wellness" class="card" style="text-decoration: none;">
+        <div class="card-thumb-placeholder card-thumb-2"><span class="card-icon-letter">◇</span></div>
+        <div class="card-body">
+          <p class="card-tag">Mental Health</p>
+          <h3 class="card-title">Sexual Self-Care as Stress Management: What Therapists Say</h3>
+          <p class="card-excerpt">Licensed sex therapists share evidence-based perspectives on solo play as a legitimate stress-reduction tool.</p>
+          <div class="card-meta"><span>The Journal</span><span class="card-read-more">Read →</span></div>
+        </div>
+      </a>
+      <a href="/wellness" class="card" style="text-decoration: none;">
+        <div class="card-thumb-placeholder card-thumb-3"><span class="card-icon-letter">✦</span></div>
+        <div class="card-body">
+          <p class="card-tag">Body Positivity</p>
+          <h3 class="card-title">Reframing Pleasure: How Gen Z is Reshaping the Wellness Conversation</h3>
+          <p class="card-excerpt">Cultural analysis of the shift from shame to self-care in sexual wellness discourse among 18–34 year olds.</p>
+          <div class="card-meta"><span>The Journal</span><span class="card-read-more">Read →</span></div>
+        </div>
+      </a>
+    {% endif %}
+  </div>
+</section>

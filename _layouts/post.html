@@ -1,0 +1,64 @@
+---
+layout: default
+---
+
+<article itemscope itemtype="https://schema.org/Article">
+
+  <header class="article-header">
+    <p class="article-category">{{ page.category | default: page.categories | first | upcase }}</p>
+    <h1 class="article-title" itemprop="headline">{{ page.title }}</h1>
+    <div class="article-meta">
+      <span itemprop="author">{{ page.author | default: site.author }}</span>
+      <span>{{ page.date | date: "%B %-d, %Y" }}</span>
+      <span>{{ page.read_time | default: "6" }} min read</span>
+    </div>
+  </header>
+
+  {% if page.image %}
+  <div class="article-hero-img">
+    <img src="{{ page.image | relative_url }}" alt="{{ page.image_alt | default: page.title }}" loading="lazy" itemprop="image">
+  </div>
+  {% endif %}
+
+  <div class="article-body" itemprop="articleBody">
+
+    <!-- Affiliate disclosure for review/guide content -->
+    {% if page.affiliate %}
+    <div class="affiliate-note">
+      <strong>Disclosure:</strong> This article contains affiliate links. If you purchase through our links, we may earn a commission at no extra cost to you. This never influences our editorial opinions — read our full <a href="/affiliate-disclosure">Affiliate Disclosure</a>.
+    </div>
+    {% endif %}
+
+    {{ content }}
+
+  </div>
+
+  <!-- Related posts -->
+  {% assign related = site.posts | where_exp: "post", "post.url != page.url" | where_exp: "post", "post.categories contains page.categories[0]" | limit: 3 %}
+  {% if related.size > 0 %}
+  <div class="section-wrap" style="padding-top: 0;">
+    <div class="section-header">
+      <h2 class="section-title">Related Reading</h2>
+    </div>
+    <div class="cards-grid">
+      {% for post in related %}
+      <a href="{{ post.url | relative_url }}" class="card" style="text-decoration: none;">
+        <div class="card-thumb-placeholder card-thumb-1">
+          <span class="card-icon-letter">✦</span>
+        </div>
+        <div class="card-body">
+          <p class="card-tag">{{ post.categories | first }}</p>
+          <h3 class="card-title">{{ post.title }}</h3>
+          <p class="card-excerpt">{{ post.excerpt | strip_html | truncate: 100 }}</p>
+          <div class="card-meta">
+            <span>{{ post.date | date: "%b %-d, %Y" }}</span>
+            <span class="card-read-more">Read →</span>
+          </div>
+        </div>
+      </a>
+      {% endfor %}
+    </div>
+  </div>
+  {% endif %}
+
+</article>

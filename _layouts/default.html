@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>{% if page.title %}{{ page.title }} — {{ site.title }}{% else %}{{ site.title }} — Sexual Wellness & High-Tech Toys{% endif %}</title>
+  <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | truncate: 155 }}{% else %}{{ site.description }}{% endif %}">
+  <!-- SEO -->
+  {% seo %}
+  <!-- Canonical -->
+  <link rel="canonical" href="{{ page.url | prepend: site.url }}">
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="{{ '/assets/favicon.svg' | relative_url }}">
+  <!-- Open Graph -->
+  <meta property="og:type" content="{% if page.layout == 'post' %}article{% else %}website{% endif %}">
+  <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
+  <meta property="og:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | truncate: 155 }}{% else %}{{ site.description }}{% endif %}">
+  <meta property="og:url" content="{{ page.url | prepend: site.url }}">
+  <meta property="og:site_name" content="{{ site.title }}">
+  {% if page.image %}<meta property="og:image" content="{{ page.image | prepend: site.url }}">{% endif %}
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
+  <!-- Schema.org -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "{% if page.layout == 'post' or page.layout == 'review' %}Article{% else %}WebSite{% endif %}",
+    "name": "{{ site.title }}",
+    "url": "{{ site.url }}"{% if page.layout == 'post' or page.layout == 'review' %},
+    "headline": "{{ page.title }}",
+    "datePublished": "{{ page.date | date_to_xmlschema }}",
+    "author": { "@type": "Person", "name": "{{ page.author | default: site.author }}" }
+    {% endif %}
+  }
+  </script>
+</head>
+<body>
+
+  <!-- AGE GATE -->
+  <div class="age-gate" id="ageGate">
+    <span class="age-gate-logo">Yogi &amp; Linga</span>
+    <h2>Are you 18 or older?</h2>
+    <p>This website contains adult content related to sexual wellness and health. Please confirm your age to continue.</p>
+    <div class="age-gate-btns">
+      <button class="btn-confirm" onclick="confirmAge()">Yes, I am 18+</button>
+      <button class="btn-deny" onclick="denyAge()">No, exit</button>
+    </div>
+    <p class="age-gate-fine">By entering, you confirm you are at least 18 years old and agree to our <a href="/privacy" style="color: var(--rose-gold)">Privacy Policy</a> and <a href="/terms" style="color: var(--rose-gold)">Terms of Use</a>.</p>
+  </div>
+
+  <!-- NAVIGATION -->
+  <nav class="site-nav" role="navigation" aria-label="Main navigation">
+    <div class="nav-left">
+      <a href="/reviews">Reviews</a>
+      <a href="/wellness">Wellness</a>
+      <a href="/guides">Guides</a>
+    </div>
+
+    <a href="/" class="site-logo" aria-label="{{ site.title }} home">Yogi &amp; Linga</a>
+
+    <div class="nav-right">
+      <a href="/compare">Compare</a>
+      <a href="/about">About</a>
+      <a href="/search" aria-label="Search">&#x2315;</a>
+    </div>
+  </nav>
+
+  <!-- MARQUEE -->
+  <div class="marquee-strip" aria-hidden="true">
+    <div class="marquee-track">
+      <span class="dot">✦</span> Medical-grade silicone &nbsp;&nbsp;
+      <span class="dot">✦</span> App-controlled &nbsp;&nbsp;
+      <span class="dot">✦</span> Sonic wave technology &nbsp;&nbsp;
+      <span class="dot">✦</span> Body-safe materials &nbsp;&nbsp;
+      <span class="dot">✦</span> Science-backed wellness &nbsp;&nbsp;
+      <span class="dot">✦</span> Independent reviews &nbsp;&nbsp;
+      <span class="dot">✦</span> FTC compliant &nbsp;&nbsp;
+      <span class="dot">✦</span> 100% private &nbsp;&nbsp;
+      <!-- Duplicate for seamless loop -->
+      <span class="dot">✦</span> Medical-grade silicone &nbsp;&nbsp;
+      <span class="dot">✦</span> App-controlled &nbsp;&nbsp;
+      <span class="dot">✦</span> Sonic wave technology &nbsp;&nbsp;
+      <span class="dot">✦</span> Body-safe materials &nbsp;&nbsp;
+      <span class="dot">✦</span> Science-backed wellness &nbsp;&nbsp;
+      <span class="dot">✦</span> Independent reviews &nbsp;&nbsp;
+      <span class="dot">✦</span> FTC compliant &nbsp;&nbsp;
+      <span class="dot">✦</span> 100% private &nbsp;&nbsp;
+    </div>
+  </div>
+
+  <!-- MAIN CONTENT -->
+  <main id="main-content" role="main">
+    {{ content }}
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="footer-main">
+      <div class="footer-brand">
+        <span class="footer-logo-text">Yogi &amp; Linga</span>
+        <p class="footer-tagline">Science-backed sexual wellness reviews, guides, and editorial for curious adults. Not taboo — just honest.</p>
+      </div>
+      <div class="footer-col">
+        <h5>Explore</h5>
+        <ul>
+          <li><a href="/reviews">All Reviews</a></li>
+          <li><a href="/wellness">Wellness</a></li>
+          <li><a href="/guides">Buying Guides</a></li>
+          <li><a href="/compare">Compare</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Editorial</h5>
+        <ul>
+          <li><a href="/about">About Us</a></li>
+          <li><a href="/methodology">Our Methodology</a></li>
+          <li><a href="/affiliate-disclosure">Affiliate Disclosure</a></li>
+          <li><a href="/contact">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Legal</h5>
+        <ul>
+          <li><a href="/privacy">Privacy Policy</a></li>
+          <li><a href="/terms">Terms of Use</a></li>
+          <li><a href="/cookie-policy">Cookie Policy</a></li>
+          <li><a href="/sitemap.xml">Sitemap</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© {{ 'now' | date: "%Y" }} Yogi &amp; Linga · For adults 18+ only · All content is for informational purposes.</p>
+      <div class="footer-legal">
+        <a href="/affiliate-disclosure">Affiliate Disclosure</a>
+        <a href="/privacy">Privacy</a>
+        <a href="/terms">Terms</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- AGE GATE SCRIPT -->
+  <script>
+    (function() {
+      if (sessionStorage.getItem('ageVerified') === 'true') {
+        document.getElementById('ageGate').classList.add('hidden');
+      }
+    })();
+    function confirmAge() {
+      sessionStorage.setItem('ageVerified', 'true');
+      document.getElementById('ageGate').classList.add('hidden');
+    }
+    function denyAge() {
+      window.location.href = 'https://www.google.com';
+    }
+  </script>
+
+</body>
+</html>

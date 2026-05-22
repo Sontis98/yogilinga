@@ -1,0 +1,55 @@
+title: "Yogi & Linga"
+description: "Sexual wellness, high-tech toys & science-backed self-care for curious adults."
+url: "https://yogilinga.com"
+baseurl: ""
+author: "Yogi & Linga Editorial"
+email: "hello@yogilinga.com"
+lang: "en-US"
+
+# Build
+markdown: kramdown
+highlighter: rouge
+permalink: /:categories/:title/
+
+# Pagination
+plugins:
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-seo-tag
+paginate: 9
+paginate_path: "/page/:num/"
+
+# Collections
+collections:
+  reviews:
+    output: true
+    permalink: /reviews/:title/
+  guides:
+    output: true
+    permalink: /guides/:title/
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      author: "Editorial Team"
+  - scope:
+      path: ""
+      type: "reviews"
+    values:
+      layout: "review"
+  - scope:
+      path: ""
+      type: "guides"
+    values:
+      layout: "guide"
+
+# Exclude
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - node_modules

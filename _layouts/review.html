@@ -1,0 +1,78 @@
+---
+layout: default
+---
+
+<article itemscope itemtype="https://schema.org/Review">
+
+  <header class="article-header">
+    <p class="article-category">{{ page.category | upcase }} · REVIEW</p>
+    <h1 class="article-title" itemprop="name">{{ page.title }}</h1>
+    <div class="article-meta">
+      <span itemprop="author">{{ page.author | default: site.author }}</span>
+      <span>{{ page.date | date: "%B %-d, %Y" }}</span>
+      <span>{{ page.read_time | default: "8" }} min read</span>
+      {% if page.score %}<span class="score-badge">{{ page.score }}/10</span>{% endif %}
+    </div>
+  </header>
+
+  {% if page.image %}
+  <div class="article-hero-img">
+    <img src="{{ page.image | relative_url }}" alt="{{ page.title }}" loading="lazy">
+  </div>
+  {% endif %}
+
+  <div class="article-body">
+
+    <!-- FTC Affiliate Disclosure — required by law -->
+    <div class="affiliate-note">
+      <strong>FTC Disclosure:</strong> We independently research and test every product. This review contains affiliate links — if you buy through them, we earn a small commission at no extra cost to you. Our scores and opinions are never influenced by brands. <a href="/affiliate-disclosure">Learn more →</a>
+    </div>
+
+    <!-- SCORECARD -->
+    {% if page.scores %}
+    <div class="review-scorecard">
+      <div class="scorecard-header">
+        <div>
+          <p class="card-tag">{{ page.brand }}</p>
+          <p class="scorecard-product">{{ page.product_name | default: page.title }}</p>
+        </div>
+        <div class="overall-score">
+          <div class="score-number" itemprop="ratingValue">{{ page.score }}</div>
+          <div class="score-label">Overall / 10</div>
+        </div>
+      </div>
+      <div class="score-rows">
+        {% for item in page.scores %}
+        <div class="score-row">
+          <span class="score-name">{{ item.name }}</span>
+          <div class="score-bar-wrap">
+            <div class="score-bar" style="width: {{ item.value | times: 10 }}%"></div>
+          </div>
+          <span class="score-num">{{ item.value }}</span>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+    {% endif %}
+
+    {{ content }}
+
+    <!-- BUY BOX -->
+    {% if page.buy_url %}
+    <div class="buy-box">
+      <div class="buy-box-info">
+        <h4>{{ page.product_name | default: page.title }}</h4>
+        <p>{{ page.buy_note | default: "Available with free US shipping · Discreet packaging guaranteed" }}</p>
+      </div>
+      <div style="display: flex; align-items: center; gap: 1.5rem; flex-wrap: wrap;">
+        {% if page.price %}<span class="buy-box-price">{{ page.price }}</span>{% endif %}
+        <a href="{{ page.buy_url }}" class="btn-primary" target="_blank" rel="nofollow sponsored noopener" style="display: inline-block;">
+          Check Price →
+        </a>
+      </div>
+    </div>
+    {% endif %}
+
+  </div>
+
+</article>
