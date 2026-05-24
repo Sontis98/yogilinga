@@ -32,7 +32,6 @@ description: "Get in touch with the Yogi & Linga editorial team for press inquir
   line-height: 1.9;
   color: var(--cream-dim);
 }
-
 .contact-grid {
   max-width: 960px;
   margin: 0 auto;
@@ -42,8 +41,6 @@ description: "Get in touch with the Yogi & Linga editorial team for press inquir
   gap: 4rem;
   align-items: start;
 }
-
-.contact-options {}
 .contact-option {
   padding: 1.75rem 0;
   border-bottom: 0.5px solid var(--border);
@@ -77,9 +74,9 @@ description: "Get in touch with the Yogi & Linga editorial team for press inquir
   border-bottom: 0.5px solid rgba(201,149,108,0.4);
   padding-bottom: 2px;
   display: inline-block;
+  text-decoration: none;
 }
 .contact-email:hover { color: var(--rose-gold-bright); }
-
 .contact-form-wrap {
   background: rgba(255,255,255,0.025);
   border: 0.5px solid var(--border);
@@ -116,6 +113,7 @@ description: "Get in touch with the Yogi & Linga editorial team for press inquir
   padding: 0.75rem 1rem;
   outline: none;
   transition: border-color 0.3s;
+  box-sizing: border-box;
   -webkit-appearance: none;
 }
 .form-input:focus, .form-select:focus, .form-textarea:focus {
@@ -127,6 +125,7 @@ description: "Get in touch with the Yogi & Linga editorial team for press inquir
   background-repeat: no-repeat;
   background-position: right 1rem center;
   padding-right: 2.5rem;
+  background-color: rgba(255,255,255,0.04);
 }
 .form-select option { background: var(--wine-deep); color: var(--cream); }
 .form-textarea { resize: vertical; min-height: 130px; line-height: 1.6; }
@@ -156,13 +155,13 @@ description: "Get in touch with the Yogi & Linga editorial team for press inquir
   display: none;
   background: rgba(201,149,108,0.08);
   border: 0.5px solid rgba(201,149,108,0.3);
-  padding: 1.5rem;
+  padding: 2rem 1.5rem;
   text-align: center;
   color: var(--rose-gold-bright);
-  font-size: 0.88rem;
-  line-height: 1.7;
+  font-size: 0.9rem;
+  line-height: 1.8;
 }
-
+.success-msg .success-icon { font-size: 1.8rem; display: block; margin-bottom: 0.75rem; }
 @media (max-width: 768px) {
   .contact-grid { grid-template-columns: 1fr; gap: 2rem; }
 }
@@ -176,35 +175,30 @@ description: "Get in touch with the Yogi & Linga editorial team for press inquir
 
 <div class="contact-grid">
   <div class="contact-options">
-
     <div class="contact-option">
       <p class="contact-option-label">Editorial</p>
       <p class="contact-option-title">General inquiries</p>
       <p class="contact-option-text">Questions about our reviews, methodology, or content. We read everything and respond when we can.</p>
       <a href="mailto:hello@yogilinga.com" class="contact-email">hello@yogilinga.com</a>
     </div>
-
     <div class="contact-option">
       <p class="contact-option-label">Partnerships</p>
       <p class="contact-option-title">Brands & PR</p>
       <p class="contact-option-text">We accept press samples for consideration. Sending a sample does not guarantee coverage. We do not publish paid reviews.</p>
       <a href="mailto:press@yogilinga.com" class="contact-email">press@yogilinga.com</a>
     </div>
-
     <div class="contact-option">
       <p class="contact-option-label">Corrections</p>
       <p class="contact-option-title">Found an error?</p>
       <p class="contact-option-text">We take accuracy seriously. If you've spotted a factual error, outdated information, or a broken link, please let us know and we'll correct it promptly.</p>
       <a href="mailto:corrections@yogilinga.com" class="contact-email">corrections@yogilinga.com</a>
     </div>
-
     <div class="contact-option">
       <p class="contact-option-label">Affiliate</p>
       <p class="contact-option-title">Affiliate programs</p>
       <p class="contact-option-text">For affiliate partnership inquiries and commission structure questions.</p>
       <a href="mailto:affiliate@yogilinga.com" class="contact-email">affiliate@yogilinga.com</a>
     </div>
-
   </div>
 
   <div class="contact-form-wrap">
@@ -212,10 +206,12 @@ description: "Get in touch with the Yogi & Linga editorial team for press inquir
     <p class="contact-form-sub">Typically replied within 2–3 business days.</p>
 
     <div class="success-msg" id="successMsg">
-      ✦ Thank you for your message. We'll be in touch within 2–3 business days.
+      <span class="success-icon">✦</span>
+      Thank you — your message has been sent.<br>
+      We'll be in touch within 2–3 business days.
     </div>
 
-    <form id="contactForm" action="https://formspree.io/f/hello@yogilinga.com" method="POST">
+    <form id="contactForm" novalidate>
       <div class="form-group">
         <label class="form-label" for="name">Your name</label>
         <input class="form-input" type="text" id="name" name="name" placeholder="First and last name" required>
@@ -227,12 +223,12 @@ description: "Get in touch with the Yogi & Linga editorial team for press inquir
       <div class="form-group">
         <label class="form-label" for="subject">Subject</label>
         <select class="form-select" id="subject" name="subject">
-          <option value="general">General inquiry</option>
-          <option value="product">Product suggestion</option>
-          <option value="press">Press / Brand inquiry</option>
-          <option value="correction">Correction</option>
-          <option value="affiliate">Affiliate partnership</option>
-          <option value="other">Other</option>
+          <option value="General inquiry">General inquiry</option>
+          <option value="Product suggestion">Product suggestion</option>
+          <option value="Press / Brand inquiry">Press / Brand inquiry</option>
+          <option value="Correction">Correction</option>
+          <option value="Affiliate partnership">Affiliate partnership</option>
+          <option value="Other">Other</option>
         </select>
       </div>
       <div class="form-group">
@@ -240,7 +236,7 @@ description: "Get in touch with the Yogi & Linga editorial team for press inquir
         <textarea class="form-textarea" id="message" name="message" placeholder="Tell us what's on your mind..." required></textarea>
       </div>
       <button type="submit" class="form-submit">Send Message</button>
-      <p class="form-note">Your information is never sold or shared. Read our <a href="/privacy" style="color: var(--rose-gold);">Privacy Policy</a>.</p>
+      <p class="form-note">Your information is never sold or shared. Read our <a href="{{ '/privacy/' | relative_url }}" style="color: var(--rose-gold);">Privacy Policy</a>.</p>
     </form>
   </div>
 </div>
@@ -248,7 +244,26 @@ description: "Get in touch with the Yogi & Linga editorial team for press inquir
 <script>
 document.getElementById('contactForm').addEventListener('submit', function(e) {
   e.preventDefault();
-  document.getElementById('successMsg').style.display = 'block';
-  this.style.display = 'none';
+  var name    = document.getElementById('name').value.trim();
+  var email   = document.getElementById('email').value.trim();
+  var subject = document.getElementById('subject').value;
+  var message = document.getElementById('message').value.trim();
+
+  if (!name || !email || !message) {
+    alert('Please fill in all required fields.');
+    return;
+  }
+
+  var body = 'Name: ' + name + '\nEmail: ' + email + '\n\n' + message;
+  var mailtoLink = 'mailto:hello@yogilinga.com'
+    + '?subject=' + encodeURIComponent('[Yogi & Linga] ' + subject)
+    + '&body='    + encodeURIComponent(body);
+
+  window.location.href = mailtoLink;
+
+  setTimeout(function() {
+    document.getElementById('contactForm').style.display = 'none';
+    document.getElementById('successMsg').style.display  = 'block';
+  }, 800);
 });
 </script>
