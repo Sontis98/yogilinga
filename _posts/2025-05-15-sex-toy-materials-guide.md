@@ -2,6 +2,7 @@
 layout: post
 title: "Sex Toy Materials Guide: What's Body-Safe and What Isn't"
 date: 2025-05-15
+image: /assets/images/blog/body-safe-toy-materials-a-science-guide.jpg
 author: "Editorial Team"
 category: "wellness"
 read_time: 8

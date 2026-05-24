@@ -1,6 +1,7 @@
 ---
 title: "Satisfyer Curvy 1+ Review: Air Pulse + Vibration Combined"
 date: 2025-05-27
+image: /assets/images/reviews/satisfyer-curvy-1-plus.jpg
 category: "Air Pulse · Satisfyer"
 brand: "Satisfyer"
 product_name: "Satisfyer Curvy 1+"

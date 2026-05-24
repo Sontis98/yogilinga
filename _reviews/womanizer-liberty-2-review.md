@@ -1,6 +1,7 @@
 ---
 title: "Womanizer Liberty 2 Review: Premium Air Pulse, Travel-Ready"
 date: 2025-05-31
+image: /assets/images/reviews/womanizer-liberty-2.jpg
 category: "Air Pulse · Womanizer"
 brand: "Womanizer"
 product_name: "Womanizer Liberty 2"

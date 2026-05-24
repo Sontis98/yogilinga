@@ -12,7 +12,7 @@ score: 8.8
 price: "$109"
 buy_url: "https://lovense.com/vibrator/osci-2"
 buy_note: "Free shipping · Discreet billing · 1-year warranty"
-image: "/assets/images/reviews/lovense-osci-2.jpg"
+image: /assets/images/reviews/lovense-osci-2.jpg
 image_alt: "Lovense Osci 2 G-spot oscillating vibrator"
 excerpt: "The Lovense Osci 2 doesn't vibrate — it oscillates, creating a back-and-forth rocking motion against the G-spot. After testing dozens of G-spot toys, we found this approach uniquely effective for a subset of users."
 scores:

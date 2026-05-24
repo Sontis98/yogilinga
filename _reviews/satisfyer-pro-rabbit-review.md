@@ -1,6 +1,7 @@
 ---
 title: "Satisfyer Feel Good Rabbit Review: Best Budget Dual Stimulation Toy"
 date: 2025-05-28
+image: /assets/images/reviews/satisfyer-pro-rabbit.jpg
 category: "Rabbit · Satisfyer"
 brand: "Satisfyer"
 product_name: "Satisfyer Feel Good Rabbit"

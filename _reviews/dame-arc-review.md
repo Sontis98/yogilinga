@@ -1,6 +1,7 @@
 ---
 title: "Dame Arc Review: The Most Ergonomic G-Spot Vibrator"
 date: 2025-06-05
+image: /assets/images/reviews/dame-arc.jpg
 category: "G-Spot · Dame"
 brand: "Dame Products"
 product_name: "Dame Arc"

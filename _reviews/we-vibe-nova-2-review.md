@@ -1,6 +1,7 @@
 ---
 title: "We-Vibe Nova 2 Review: The Flexible Rabbit Vibrator That Actually Fits"
 date: 2025-05-24
+image: /assets/images/reviews/we-vibe-nova-2.jpg
 category: "Rabbit · We-Vibe"
 brand: "We-Vibe"
 product_name: "We-Vibe Nova 2"

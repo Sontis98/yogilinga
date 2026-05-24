@@ -2,6 +2,7 @@
 layout: post
 title: "Best Couples Toys for Long-Distance Relationships in 2025"
 date: 2025-05-17
+image: /assets/images/blog/best-couples-toys-long-distance.jpg
 author: "Editorial Team"
 category: "couples"
 read_time: 9

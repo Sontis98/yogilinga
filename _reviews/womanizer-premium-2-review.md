@@ -1,6 +1,7 @@
 ---
 title: "Womanizer Premium 2 Review: The Quietest, Most Refined Air Pulse Toy"
 date: 2025-05-30
+image: /assets/images/reviews/womanizer-premium-2.jpg
 category: "Air Pulse · Womanizer"
 brand: "Womanizer"
 product_name: "Womanizer Premium 2"

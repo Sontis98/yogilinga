@@ -1,6 +1,7 @@
 ---
 title: "Satisfyer Love Triangle Review: Air Pulse Meets Couples Play"
 date: 2025-05-29
+image: /assets/images/reviews/satisfyer-love-triangle.jpg
 category: "Couples · Satisfyer"
 brand: "Satisfyer"
 product_name: "Satisfyer Love Triangle"

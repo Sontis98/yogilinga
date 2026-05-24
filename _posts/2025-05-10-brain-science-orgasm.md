@@ -2,6 +2,7 @@
 layout: post
 title: "What Happens to Your Brain During Orgasm — What the Science Actually Says"
 date: 2025-05-10
+image: /assets/images/blog/brain-science-orgasm.jpg
 author: "Editorial Team"
 category: "wellness"
 read_time: 9

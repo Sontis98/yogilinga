@@ -2,6 +2,7 @@
 layout: post
 title: "Lovense App Review 2025: Features, Reliability, and Honest Pros & Cons"
 date: 2025-05-29
+image: /assets/images/blog/lovense-app-review.jpg
 author: "Editorial Team"
 category: "guides"
 read_time: 8

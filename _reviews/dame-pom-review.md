@@ -1,6 +1,7 @@
 ---
 title: "Dame Pom Review: The Flexible Clitoral Vibrator That Molds to You"
 date: 2025-06-07
+image: /assets/images/reviews/dame-pom.jpg
 category: "Clitoral · Dame"
 brand: "Dame Products"
 product_name: "Dame Pom"

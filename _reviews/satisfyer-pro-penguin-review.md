@@ -1,6 +1,7 @@
 ---
 title: "Satisfyer Pro Penguin Review: Cute Design, Serious Performance"
 date: 2025-05-26
+image: /assets/images/reviews/satisfyer-pro-penguin.jpg
 category: "Air Pulse · Satisfyer"
 brand: "Satisfyer"
 product_name: "Satisfyer Pro Penguin"

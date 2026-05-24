@@ -6,7 +6,7 @@ date: 2026-05-16
 author: "Yogi & Linga Editors"
 read_time: "13"
 category: guides
-image: /assets/images/guides/lelo-guide.jpg
+image: /assets/images/guides/lelo-brand-guide.jpg
 excerpt: "LELO is one of the most recognizable names in sexual wellness. But with dozens of products and premium price tags, knowing which one to buy is not obvious. This guide makes it clear."
 ---
 

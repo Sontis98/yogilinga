@@ -1,6 +1,7 @@
 ---
 title: "We-Vibe Wand 2 Review: Premium Wand Vibrator Worth the Price?"
 date: 2025-05-23
+image: /assets/images/reviews/we-vibe-wand-2.jpg
 category: "Wand · We-Vibe"
 brand: "We-Vibe"
 product_name: "We-Vibe Wand 2"

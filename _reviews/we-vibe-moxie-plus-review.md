@@ -1,6 +1,7 @@
 ---
 title: "We-Vibe Moxie+ Review: Best Wearable Panty Vibrator"
 date: 2025-05-22
+image: /assets/images/reviews/we-vibe-moxie-plus.jpg
 category: "Wearable · We-Vibe"
 brand: "We-Vibe"
 product_name: "We-Vibe Moxie+"

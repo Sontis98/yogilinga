@@ -1,6 +1,7 @@
 ---
 title: "Dame Com Review: Hands-Free Suction Toy for Couples"
 date: 2025-06-08
+image: /assets/images/reviews/dame-com.jpg
 category: "Couples · Dame"
 brand: "Dame Products"
 product_name: "Dame Com"

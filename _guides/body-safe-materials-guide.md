@@ -1,6 +1,7 @@
 ---
 title: "The Complete Body-Safe Sex Toy Materials Guide"
 date: 2025-05-10
+image: /assets/images/guides/body-safe-materials-guide.jpg
 category: "Materials · Safety"
 read_time: 12
 author: "Rowan Ellis"

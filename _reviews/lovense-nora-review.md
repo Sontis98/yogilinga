@@ -12,7 +12,7 @@ score: 9.0
 price: "$119"
 buy_url: "https://lovense.com/vibrator/nora"
 buy_note: "Free shipping · Discreet billing · 1-year warranty"
-image: "/assets/images/reviews/lovense-nora.jpg"
+image: /assets/images/reviews/lovense-nora.jpg
 image_alt: "Lovense Nora rabbit vibrator on neutral background"
 excerpt: "The Lovense Nora is the only rabbit vibrator that syncs in real time with a partner's toy across any distance. After five weeks of testing, we found it delivers on both fronts — strong dual stimulation and the best long-distance app in the category."
 scores:

@@ -12,7 +12,7 @@ score: 8.6
 price: "$99"
 buy_url: "https://lovense.com/vibrator/ferri"
 buy_note: "Free shipping · Discreet billing · 1-year warranty"
-image: "/assets/images/reviews/lovense-ferri.jpg"
+image: /assets/images/reviews/lovense-ferri.jpg
 image_alt: "Lovense Ferri magnetic panty vibrator"
 excerpt: "The Lovense Ferri attaches to underwear via a magnetic clip and stays in place without straps or harnesses. At $99, it's the most practical panty vibrator we've tested for both solo and partner-controlled use."
 scores:

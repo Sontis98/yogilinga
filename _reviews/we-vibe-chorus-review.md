@@ -1,6 +1,7 @@
 ---
 title: "We-Vibe Chorus Review: The Best Couples Vibrator of 2025"
 date: 2025-05-20
+image: /assets/images/reviews/we-vibe-chorus.jpg
 category: "Couples · We-Vibe"
 brand: "We-Vibe"
 product_name: "We-Vibe Chorus"

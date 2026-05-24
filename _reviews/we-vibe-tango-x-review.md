@@ -1,6 +1,7 @@
 ---
 title: "We-Vibe Tango X Review: The Most Powerful Bullet Vibrator"
 date: 2025-05-21
+image: /assets/images/reviews/we-vibe-tango-x.jpg
 category: "Bullet · We-Vibe"
 brand: "We-Vibe"
 product_name: "We-Vibe Tango X"

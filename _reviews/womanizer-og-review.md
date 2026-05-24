@@ -1,6 +1,7 @@
 ---
 title: "Womanizer OG Review: Air Pulse Meets G-Spot Stimulation"
 date: 2025-06-02
+image: /assets/images/reviews/womanizer-og.jpg
 category: "G-Spot · Womanizer"
 brand: "Womanizer"
 product_name: "Womanizer OG"

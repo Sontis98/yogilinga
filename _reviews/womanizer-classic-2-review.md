@@ -1,6 +1,7 @@
 ---
 title: "Womanizer Classic 2 Review: Reliable Mid-Range Air Pulse"
 date: 2025-06-03
+image: /assets/images/reviews/womanizer-classic-2.jpg
 category: "Air Pulse · Womanizer"
 brand: "Womanizer"
 product_name: "Womanizer Classic 2"

@@ -12,7 +12,7 @@ score: 9.0
 price: "$99"
 buy_url: "https://lovense.com/male-toy/max-2"
 buy_note: "Free shipping · Discreet billing · 1-year warranty"
-image: "/assets/images/reviews/lovense-max-2.jpg"
+image: /assets/images/reviews/lovense-max-2.jpg
 image_alt: "Lovense Max 2 male masturbator"
 excerpt: "The Lovense Max 2 vibrates, contracts, and syncs in real time with a partner's Lovense toy across any distance. For long-distance couples or solo users who want app control, there's nothing else that does what the Max 2 does."
 scores:

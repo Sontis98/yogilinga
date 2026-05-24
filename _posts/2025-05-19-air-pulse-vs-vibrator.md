@@ -2,6 +2,7 @@
 layout: post
 title: "Air-Pulse vs Vibrator: Which Type of Clitoral Stimulation Is Right for You?"
 date: 2025-05-19
+image: /assets/images/blog/air-pulse-vs-vibrator.jpg
 author: "Editorial Team"
 category: "guides"
 read_time: 7

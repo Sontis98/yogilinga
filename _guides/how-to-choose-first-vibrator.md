@@ -1,6 +1,7 @@
 ---
 title: "How to Choose Your First Vibrator: A No-Hype Buying Guide"
 date: 2025-05-14
+image: /assets/images/guides/how-to-choose-first-vibrator.jpg
 category: "Beginners · Vibrators"
 read_time: 10
 author: "Sasha Mercer"

@@ -12,7 +12,7 @@ score: 8.7
 price: "$89"
 buy_url: "https://lovense.com/vibrator/domi-2"
 buy_note: "Free shipping · Discreet billing · 1-year warranty"
-image: "/assets/images/reviews/lovense-domi-2.jpg"
+image: /assets/images/reviews/lovense-domi-2.jpg
 image_alt: "Lovense Domi 2 wand vibrator"
 excerpt: "Wand vibrators are the most powerful category of vibrator — and the Lovense Domi 2 adds app control to that power at a price that undercuts the Magic Wand Rechargeable by $30. Here's whether it's worth it."
 scores:

@@ -1,6 +1,7 @@
 ---
 title: "Satisfyer Pro 2 Review: The Best Budget Air Pulse Vibrator"
 date: 2025-05-25
+image: /assets/images/reviews/satisfyer-pro-2.jpg
 category: "Air Pulse · Satisfyer"
 brand: "Satisfyer"
 product_name: "Satisfyer Pro 2"

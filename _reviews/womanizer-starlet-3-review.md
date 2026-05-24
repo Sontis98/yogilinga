@@ -1,6 +1,7 @@
 ---
 title: "Womanizer Starlet 3 Review: Entry-Level Air Pulse Done Right"
 date: 2025-06-01
+image: /assets/images/reviews/womanizer-starlet-3.jpg
 category: "Air Pulse · Womanizer"
 brand: "Womanizer"
 product_name: "Womanizer Starlet 3"

@@ -2,6 +2,7 @@
 layout: post
 title: "Complete Lovense Buying Guide 2025: Which Toy Is Right for You?"
 date: 2025-05-22
+image: /assets/images/blog/complete-lovense-buying-guide.jpg
 author: "Editorial Team"
 category: "guides"
 read_time: 12

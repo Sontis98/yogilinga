@@ -12,7 +12,7 @@ score: 9.1
 price: "$99"
 buy_url: "https://lovense.com/anal/hush-2"
 buy_note: "Free shipping · Discreet billing · 1-year warranty"
-image: "/assets/images/reviews/lovense-hush-2.jpg"
+image: /assets/images/reviews/lovense-hush-2.jpg
 image_alt: "Lovense Hush 2 vibrating butt plug"
 excerpt: "The Lovense Hush 2 is the best-selling app-controlled butt plug for a simple reason: it works reliably, vibrates powerfully, and uses the same long-distance app infrastructure as the rest of the Lovense lineup."
 scores:

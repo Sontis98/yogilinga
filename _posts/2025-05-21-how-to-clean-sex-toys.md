@@ -2,6 +2,7 @@
 layout: post
 title: "How to Clean Sex Toys Properly: A Complete Guide by Material"
 date: 2025-05-21
+image: /assets/images/blog/how-to-clean-sex-toys.jpg
 author: "Editorial Team"
 category: "wellness"
 read_time: 6

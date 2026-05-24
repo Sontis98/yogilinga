@@ -6,7 +6,7 @@ date: 2026-05-12
 author: "Yogi & Linga Editors"
 read_time: "14"
 category: guides
-image: /assets/images/guides/anal-toys-guide.jpg
+image: /assets/images/guides/anal-toys-beginners-guide.jpg
 excerpt: "Anal play is for everyone who is curious — the key is starting small, going slow, and using the right tools. Here's exactly how."
 ---
 

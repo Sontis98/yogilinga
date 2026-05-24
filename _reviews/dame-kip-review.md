@@ -1,6 +1,7 @@
 ---
 title: "Dame Kip Review: The Waterproof Bullet Built for Discretion"
 date: 2025-06-06
+image: /assets/images/reviews/dame-kip.jpg
 category: "Bullet · Dame"
 brand: "Dame Products"
 product_name: "Dame Kip"

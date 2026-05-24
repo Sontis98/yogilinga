@@ -1,6 +1,7 @@
 ---
 title: "App-Controlled Sex Toys: A Technical Buying Guide"
 date: 2025-05-18
+image: /assets/images/guides/app-controlled-sex-toys-guide.jpg
 category: "App-Controlled · Tech"
 read_time: 11
 author: "Rowan Ellis"

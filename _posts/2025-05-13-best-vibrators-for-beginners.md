@@ -2,6 +2,7 @@
 layout: post
 title: "Best Vibrators for Beginners in 2025: A No-Nonsense Guide"
 date: 2025-05-13
+image: /assets/images/blog/best-vibrators-for-beginners.jpg
 author: "Editorial Team"
 category: "guides"
 read_time: 10

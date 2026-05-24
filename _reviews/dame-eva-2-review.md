@@ -1,6 +1,7 @@
 ---
 title: "Dame Eva II Review: Hands-Free Couples Vibrator That Stays in Place"
 date: 2025-06-04
+image: /assets/images/reviews/dame-eva-2.jpg
 category: "Couples · Dame"
 brand: "Dame Products"
 product_name: "Dame Eva II"
