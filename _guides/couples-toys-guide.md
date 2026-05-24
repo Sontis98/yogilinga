@@ -8,6 +8,7 @@ read_time: "11"
 category: guides
 image: /assets/images/guides/couples-toys-guide.jpg
 excerpt: "The right couples toy bridges the orgasm gap, adds novelty, and works hands-free. Here's how to choose one that actually fits your sex life."
+related_brands: ["We-Vibe", "Lovense"]
 ---
 
 Couples toys represent one of the fastest-growing categories in sexual wellness — and for good reason. When chosen well, they solve real problems: the orgasm gap between partners with vulvas and partners with penises, the challenge of sustained clitoral stimulation during penetration, and the desire for connection across distance.

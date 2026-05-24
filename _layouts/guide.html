@@ -24,30 +24,77 @@ layout: default
 
   </div>
 
-  <!-- Related Reviews -->
-  {% assign related_reviews = site.reviews | where_exp: "r", "r.url != page.url" | limit: 3 %}
+  <!-- Related Reviews — filtered by brand if available, otherwise recent -->
+  {% if page.related_brand %}
+    {% assign related_reviews = site.reviews | where: "brand", page.related_brand | sort: "score" | reverse | limit: 3 %}
+  {% elsif page.related_brands %}
+    {% assign related_reviews = site.reviews | where_exp: "r", "page.related_brands contains r.brand" | sort: "score" | reverse | limit: 6 %}
+  {% else %}
+    {% assign related_reviews = site.reviews | sort: "score" | reverse | limit: 3 %}
+  {% endif %}
+
   {% if related_reviews.size > 0 %}
   <div class="section-wrap" style="padding-top: 0;">
     <div class="section-header">
-      <h2 class="section-title">Related Reviews</h2>
+      <h2 class="section-title">
+        {% if page.related_brand %}{{ page.related_brand }} Reviews
+        {% elsif page.related_brands %}Featured Reviews
+        {% else %}Top Reviewed Products{% endif %}
+      </h2>
       <a href="{{ '/reviews/' | relative_url }}" class="section-link">All reviews →</a>
     </div>
     <div class="cards-grid">
       {% for review in related_reviews %}
       <a href="{{ review.url | relative_url }}" class="card" style="text-decoration: none;">
+        {% if review.image %}
+        <img src="{{ review.image | relative_url }}" alt="{{ review.title }}" style="width:100%;aspect-ratio:16/9;object-fit:cover;" loading="lazy">
+        {% else %}
         <div class="card-thumb-placeholder card-thumb-{{ forloop.index }}">
           <span class="card-icon-letter">✦</span>
         </div>
+        {% endif %}
         <div class="card-body">
           <div style="display: flex; justify-content: space-between; align-items: center;">
-            <p class="card-tag">{{ review.category | default: "Review" }}</p>
+            <p class="card-tag">{{ review.brand }}</p>
             {% if review.score %}<span class="score-badge">{{ review.score }}/10</span>{% endif %}
           </div>
-          <h3 class="card-title">{{ review.title }}</h3>
+          <h3 class="card-title">{{ review.product_name | default: review.title }}</h3>
           <p class="card-excerpt">{{ review.excerpt | strip_html | truncate: 100 }}</p>
           <div class="card-meta">
             <span>{{ review.date | date: "%b %-d, %Y" }}</span>
-            <span class="card-read-more">Read →</span>
+            <span class="card-read-more">Read review →</span>
+          </div>
+        </div>
+      </a>
+      {% endfor %}
+    </div>
+  </div>
+  {% endif %}
+
+  <!-- Related Guides -->
+  {% assign other_guides = site.guides | where_exp: "g", "g.url != page.url" | limit: 3 %}
+  {% if other_guides.size > 0 %}
+  <div class="section-wrap" style="padding-top: 0; padding-bottom: 4rem;">
+    <div class="section-header">
+      <h2 class="section-title">More Buying Guides</h2>
+      <a href="{{ '/guides/' | relative_url }}" class="section-link">All guides →</a>
+    </div>
+    <div class="cards-grid">
+      {% for guide in other_guides %}
+      <a href="{{ guide.url | relative_url }}" class="card" style="text-decoration: none;">
+        {% if guide.image %}
+        <img src="{{ guide.image | relative_url }}" alt="{{ guide.title }}" style="width:100%;aspect-ratio:16/9;object-fit:cover;" loading="lazy">
+        {% else %}
+        <div class="card-thumb-placeholder">
+          <span class="card-icon-letter">✦</span>
+        </div>
+        {% endif %}
+        <div class="card-body">
+          <p class="card-tag">Buying Guide</p>
+          <h3 class="card-title">{{ guide.title }}</h3>
+          <p class="card-excerpt">{{ guide.excerpt | strip_html | truncate: 100 }}</p>
+          <div class="card-meta">
+            <span class="card-read-more">Read guide →</span>
           </div>
         </div>
       </a>

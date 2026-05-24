@@ -23,6 +23,9 @@ scores:
     value: 8.5
   - name: "Value"
     value: 8
+related_guide_url: "/guides/couples-toys-guide/"
+related_guide_title: "The Best Couples Sex Toys: A Guide to Shared Pleasure"
+related_guide_desc: "How to choose a wearable, remote-controlled, or app-enabled toy that works for both partners."
 ---
 
 The We-Vibe Moxie+ is a panty vibrator — a flat, clip-on toy worn inside underwear for external clitoral stimulation. It's designed for discreet wear: at a restaurant, in a theater, on a walk. Your partner controls it via app from any distance.

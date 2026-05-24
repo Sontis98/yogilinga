@@ -8,6 +8,7 @@ read_time: "14"
 category: guides
 image: /assets/images/guides/anal-toys-beginners-guide.jpg
 excerpt: "Anal play is for everyone who is curious — the key is starting small, going slow, and using the right tools. Here's exactly how."
+related_brand: "b-Vibe"
 ---
 
 Anal play is one of the most common forms of sexual exploration, and yet it remains surrounded by more misinformation than almost any other topic in sexual wellness. This guide cuts through the noise with straightforward, medically-accurate information to help you explore safely and comfortably — whatever your experience level.

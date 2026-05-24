@@ -29,6 +29,9 @@ scores:
   - name: "Value for Money"
     value: 9.0
 tags: [panty-vibrator, wearable, app-controlled, clitoral, discreet, long-distance]
+related_guide_url: "/guides/couples-toys-guide/"
+related_guide_title: "The Best Couples Sex Toys: A Guide to Shared Pleasure"
+related_guide_desc: "How to choose a wearable, remote-controlled, or app-enabled toy that works for both partners."
 ---
 
 The category of "panty vibrators" has a design problem. Most rely on fabric pockets or harnesses to hold the toy in place — systems that work in theory and slip in practice.

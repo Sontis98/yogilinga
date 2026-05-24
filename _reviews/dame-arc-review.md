@@ -23,6 +23,9 @@ scores:
     value: 9
   - name: "Value"
     value: 8.5
+related_guide_url: "/guides/lubricant-guide/"
+related_guide_title: "The Complete Guide to Personal Lubricants"
+related_guide_desc: "Which lube is safe with your toy — water-based vs silicone vs oil, ingredient warnings, and top picks."
 ---
 
 The Dame Arc's defining characteristic is its dramatic curve — a shape that looks unusual but makes functional sense. The arc is designed to position the motor precisely against the anterior vaginal wall (G-spot) without requiring the user to angle, twist, or adjust during use.

@@ -29,6 +29,9 @@ scores:
   - name: "Value for Money"
     value: 9.2
 tags: [male, masturbator, app-controlled, vibrating, long-distance, couples, sync]
+related_guide_url: "/guides/app-controlled-sex-toys-guide/"
+related_guide_title: "App-Controlled Sex Toys: The Complete 2026 Guide"
+related_guide_desc: "How Lovense, We-Vibe, and other app ecosystems compare — range, reliability, and partner features."
 ---
 
 The male masturbator category has a problem the female toy category solved years ago: most products are purely mechanical, with no connectivity and no way for a partner to participate remotely. The Lovense Max 2 is the most complete solution to that problem currently available.

@@ -23,6 +23,9 @@ scores:
     value: 8.5
   - name: "Noise Level"
     value: 7.5
+related_guide_url: "/guides/how-to-choose-first-vibrator/"
+related_guide_title: "How to Choose Your First Vibrator: The No-Nonsense Guide"
+related_guide_desc: "Body-safe materials, stimulation types, and the brands worth trusting — everything a first-time buyer needs."
 ---
 
 The Satisfyer Curvy 1+ is a step up from the entry-level Pro 2 and Pro Penguin in two significant ways: it adds a vibration motor alongside the air pulse mechanism, and it adds app connectivity for partner control.

@@ -6,6 +6,7 @@ category: "Beginners · Vibrators"
 read_time: 10
 author: "Sasha Mercer"
 excerpt: "Price points, motor types, shapes, and what the specs actually mean — written for people buying a vibrator for the first time. No jargon, no judgment."
+related_brands: ["Satisfyer", "Dame", "We-Vibe"]
 ---
 
 Buying your first vibrator is an exercise in information overload. The market ranges from $8 toys of questionable safety to $300 devices with app connectivity and biometric feedback. Most descriptions are either uselessly vague or written in a dialect of marketing English that means nothing.

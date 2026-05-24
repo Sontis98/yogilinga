@@ -23,6 +23,9 @@ scores:
     value: 9
   - name: "Value"
     value: 8.5
+related_guide_url: "/guides/lubricant-guide/"
+related_guide_title: "The Complete Guide to Personal Lubricants"
+related_guide_desc: "Which lube is safe with your toy — water-based vs silicone vs oil, ingredient warnings, and top picks."
 ---
 
 The Womanizer Liberty 2 is the middle ground in Womanizer's lineup: more powerful and refined than the entry-level Starlet, but without the Autopilot mode and highest-tier motor of the Premium 2. At $119 it's a strong value — particularly for users who travel or want a more discreet form factor.

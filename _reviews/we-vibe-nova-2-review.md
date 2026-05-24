@@ -23,6 +23,9 @@ scores:
     value: 8
   - name: "Value"
     value: 8
+related_guide_url: "/guides/lubricant-guide/"
+related_guide_title: "The Complete Guide to Personal Lubricants"
+related_guide_desc: "Which lube is safe with your toy — water-based vs silicone vs oil, ingredient warnings, and top picks."
 ---
 
 The traditional rabbit vibrator has an engineering problem: the clitoral arm loses contact during movement. As you thrust, the arm shifts, and the stimulation disappears. Most rabbit vibrators solve this inconsistently or not at all.

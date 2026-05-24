@@ -6,6 +6,7 @@ category: "App-Controlled · Tech"
 read_time: 11
 author: "Rowan Ellis"
 excerpt: "Bluetooth range, app quality, long-distance functionality, and which brands actually deliver on their tech promises. A technical breakdown of app-controlled sex toys."
+related_brand: "Lovense"
 ---
 
 App-controlled sex toys are one of the fastest-growing segments of the sexual wellness market. They're also one of the most overpromised. This guide evaluates the technology behind the category — what works, what doesn't, and what to expect before buying.

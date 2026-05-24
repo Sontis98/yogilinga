@@ -23,6 +23,9 @@ scores:
     value: 8
   - name: "Value"
     value: 8
+related_guide_url: "/guides/lubricant-guide/"
+related_guide_title: "The Complete Guide to Personal Lubricants"
+related_guide_desc: "Which lube is safe with your toy — water-based vs silicone vs oil, ingredient warnings, and top picks."
 ---
 
 Wand vibrators have been dominated by the Hitachi Magic Wand for decades. The We-Vibe Wand 2 doesn't dethrone it — the Magic Wand's motor is still a benchmark — but it makes a strong case for $149 over the Magic Wand Original's lower price point.

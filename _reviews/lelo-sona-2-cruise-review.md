@@ -27,6 +27,9 @@ scores:
   - name: "Value for Money"
     value: 8.5
 tags: [lelo, clitoral, sonic, suction, luxury]
+related_guide_url: "/guides/lelo-brand-guide/"
+related_guide_title: "LELO Brand Guide: Which LELO Toy Is Right for You?"
+related_guide_desc: "Compare every LELO product line — SenSonic, WaveMotion, and dual-motor — to find your perfect match."
 ---
 
 ## What Is the LELO SONA 2 Cruise?

@@ -29,6 +29,9 @@ scores:
   - name: "Value for Money"
     value: 8.8
 tags: [rabbit, app-controlled, long-distance, G-spot, couples, rotation]
+related_guide_url: "/guides/app-controlled-sex-toys-guide/"
+related_guide_title: "App-Controlled Sex Toys: The Complete 2026 Guide"
+related_guide_desc: "How Lovense, We-Vibe, and other app ecosystems compare — range, reliability, and partner features."
 ---
 
 Rabbit vibrators have existed for decades. The Lovense Nora is the first one that made us genuinely reconsider what the category could be.

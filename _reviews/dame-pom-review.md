@@ -23,6 +23,9 @@ scores:
     value: 9
   - name: "Value"
     value: 8.5
+related_guide_url: "/guides/how-to-choose-first-vibrator/"
+related_guide_title: "How to Choose Your First Vibrator: The No-Nonsense Guide"
+related_guide_desc: "Body-safe materials, stimulation types, and the brands worth trusting — everything a first-time buyer needs."
 ---
 
 The Dame Pom's premise is straightforward: a fully flexible body that conforms to whatever anatomy it's pressed against. No rigid edges, no fixed angles — the Pom bends and molds in any direction, maintaining contact with the clitoris regardless of body position or anatomy variation.

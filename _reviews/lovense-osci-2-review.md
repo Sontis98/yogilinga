@@ -29,6 +29,9 @@ scores:
   - name: "Value for Money"
     value: 8.5
 tags: [G-spot, oscillating, internal, app-controlled, solo, unique]
+related_guide_url: "/guides/app-controlled-sex-toys-guide/"
+related_guide_title: "App-Controlled Sex Toys: The Complete 2026 Guide"
+related_guide_desc: "How Lovense, We-Vibe, and other app ecosystems compare — range, reliability, and partner features."
 ---
 
 Most internal vibrators vibrate. The Lovense Osci 2 oscillates — its tip rocks back and forth in a motion that mimics manual G-spot stimulation more closely than rotating or vibrating toys.

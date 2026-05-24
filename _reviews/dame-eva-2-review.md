@@ -23,6 +23,9 @@ scores:
     value: 8
   - name: "Value"
     value: 8
+related_guide_url: "/guides/couples-toys-guide/"
+related_guide_title: "The Best Couples Sex Toys: A Guide to Shared Pleasure"
+related_guide_desc: "How to choose a wearable, remote-controlled, or app-enabled toy that works for both partners."
 ---
 
 The Dame Eva II solves an engineering problem that few sex toys have seriously attempted: external clitoral vibration during penetrative sex, hands-free, without underwear or a harness.

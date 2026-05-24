@@ -27,6 +27,9 @@ scores:
   - name: "Vibration Quality"
     value: 8.0
 tags: [b-vibe, anal, plug, beginner, vibrating]
+related_guide_url: "/guides/anal-toys-beginners-guide/"
+related_guide_title: "Anal Toys for Beginners: Everything You Need to Start Safely"
+related_guide_desc: "Learn the rules for safe anal play — materials, sizing, and exactly how to use your first toy."
 ---
 
 ## What Is the b-Vibe Novice Plug?

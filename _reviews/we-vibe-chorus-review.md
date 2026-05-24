@@ -23,6 +23,9 @@ scores:
     value: 8.5
   - name: "Value"
     value: 8
+related_guide_url: "/guides/couples-toys-guide/"
+related_guide_title: "The Best Couples Sex Toys: A Guide to Shared Pleasure"
+related_guide_desc: "How to choose a wearable, remote-controlled, or app-enabled toy that works for both partners."
 ---
 
 The We-Vibe Chorus is one of those rare products that actually delivers on its marketing. Designed for couples to use together during penetrative sex, it works as advertised — and it does so with better engineering than anything else in this category.

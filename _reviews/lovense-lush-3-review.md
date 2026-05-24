@@ -29,6 +29,9 @@ scores:
   - name: "Value for Money"
     value: 8.5
 tags: [wearable, app-controlled, long-distance, couples, G-spot]
+related_guide_url: "/guides/couples-toys-guide/"
+related_guide_title: "The Best Couples Sex Toys: A Guide to Shared Pleasure"
+related_guide_desc: "How to choose a wearable, remote-controlled, or app-enabled toy that works for both partners."
 ---
 
 Long-distance relationships have always required creativity. The Lovense Lush 3 has spent the past several years being the most practical creative solution available — a wearable G-spot vibrator that can be controlled from anywhere on earth via smartphone.
