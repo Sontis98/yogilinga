@@ -2,6 +2,49 @@
 layout: default
 ---
 
+<!-- Schema.org Review JSON-LD — Google Rich Results -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Review",
+  "name": "{{ page.title | escape }}",
+  "description": "{{ page.excerpt | default: page.title | strip_html | truncate: 155 | escape }}",
+  "datePublished": "{{ page.date | date_to_xmlschema }}",
+  "author": {
+    "@type": "Person",
+    "name": "{{ page.author | default: site.author }}"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "{{ site.title }}",
+    "url": "{{ site.url }}{{ site.baseurl }}"
+  },
+  {% if page.score %}
+  "reviewRating": {
+    "@type": "Rating",
+    "ratingValue": "{{ page.score }}",
+    "bestRating": "10",
+    "worstRating": "1"
+  },
+  {% endif %}
+  "itemReviewed": {
+    "@type": "Product",
+    "name": "{{ page.product_name | default: page.brand | default: page.title | escape }}",
+    "brand": {
+      "@type": "Brand",
+      "name": "{{ page.brand | default: '' }}"
+    }{% if page.price %},
+    "offers": {
+      "@type": "Offer",
+      "price": "{{ page.price | remove: '$' | remove: ',' }}",
+      "priceCurrency": "USD",
+      "availability": "https://schema.org/InStock",
+      "url": "{{ page.buy_url | default: '' }}"
+    }{% endif %}
+  }
+}
+</script>
+
 <article itemscope itemtype="https://schema.org/Review">
 
   <header class="article-header">
@@ -37,42 +80,4 @@ layout: default
           <p class="scorecard-product">{{ page.product_name | default: page.title }}</p>
         </div>
         <div class="overall-score">
-          <div class="score-number" itemprop="ratingValue">{{ page.score }}</div>
-          <div class="score-label">Overall / 10</div>
-        </div>
-      </div>
-      <div class="score-rows">
-        {% for item in page.scores %}
-        <div class="score-row">
-          <span class="score-name">{{ item.name }}</span>
-          <div class="score-bar-wrap">
-            <div class="score-bar" style="width: {{ item.value | times: 10 }}%"></div>
-          </div>
-          <span class="score-num">{{ item.value }}</span>
-        </div>
-        {% endfor %}
-      </div>
-    </div>
-    {% endif %}
-
-    {{ content }}
-
-    <!-- BUY BOX -->
-    {% if page.buy_url %}
-    <div class="buy-box">
-      <div class="buy-box-info">
-        <h4>{{ page.product_name | default: page.title }}</h4>
-        <p>{{ page.buy_note | default: "Available with free US shipping · Discreet packaging guaranteed" }}</p>
-      </div>
-      <div style="display: flex; align-items: center; gap: 1.5rem; flex-wrap: wrap;">
-        {% if page.price %}<span class="buy-box-price">{{ page.price }}</span>{% endif %}
-        <a href="{{ page.buy_url }}" class="btn-primary" target="_blank" rel="nofollow sponsored noopener" style="display: inline-block;">
-          Check Price →
-        </a>
-      </div>
-    </div>
-    {% endif %}
-
-  </div>
-
-</article>
+          <div class="score-number" itemprop="ratingValue">{{ page.sco

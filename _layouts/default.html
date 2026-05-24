@@ -24,18 +24,33 @@
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
-  <!-- Schema.org -->
+  <!-- Schema.org — WebSite / Article -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "{% if page.layout == 'post' or page.layout == 'review' %}Article{% else %}WebSite{% endif %}",
+    "@type": "{% if page.layout == 'post' or page.layout == 'review' or page.layout == 'guide' %}Article{% else %}WebSite{% endif %}",
     "name": "{{ site.title }}",
-    "url": "{{ site.url }}"{% if page.layout == 'post' or page.layout == 'review' %},
-    "headline": "{{ page.title }}",
+    "url": "{{ site.url }}{{ site.baseurl }}"{% if page.layout == 'post' or page.layout == 'review' or page.layout == 'guide' %},
+    "headline": "{{ page.title | escape }}",
+    "description": "{{ page.excerpt | default: site.description | strip_html | truncate: 155 | escape }}",
     "datePublished": "{{ page.date | date_to_xmlschema }}",
-    "author": { "@type": "Person", "name": "{{ page.author | default: site.author }}" }
-    {% endif %}
+    "dateModified": "{{ page.last_modified_at | default: page.date | date_to_xmlschema }}",
+    "author": { "@type": "Person", "name": "{{ page.author | default: site.author }}" },
+    "publisher": {
+      "@type": "Organization",
+      "name": "{{ site.title }}",
+      "url": "{{ site.url }}{{ site.baseurl }}"
+    }{% endif %}
   }
+  </script>
+  <!-- Google Analytics GA4 -->
+  <!-- TODO: Thay G-XXXXXXXXXX bằng Measurement ID thật sau khi tạo GA4 property -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX');
   </script>
 </head>
 <body>
@@ -145,4 +160,14 @@
         document.getElementById('ageGate').classList.add('hidden');
       }
     })();
-    function confirmA
+    function confirmAge() {
+      sessionStorage.setItem('ageVerified', 'true');
+      document.getElementById('ageGate').classList.add('hidden');
+    }
+    function denyAge() {
+      window.location.href = 'https://www.google.com';
+    }
+  </script>
+
+</body>
+</html>
