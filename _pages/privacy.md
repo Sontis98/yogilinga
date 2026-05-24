@@ -9,13 +9,13 @@ permalink: /privacy/
   <h1 class="article-title">Privacy Policy</h1>
   <div class="article-meta">
     <span>Effective date: May 22, 2025</span>
-    <span>Last updated: May 22, 2025</span>
+    <span>Last updated: May 2026</span>
   </div>
 </div>
 
 <div class="article-body">
 
-<p>Yogi &amp; Linga ("we," "us," or "our") operates the website <strong>yogilinga.com</strong> (the "Site"). We take your privacy seriously — especially given the personal nature of the topics we cover. This Privacy Policy explains what information we collect, how we use it, and your rights regarding that information.</p>
+<p>Yogi &amp; Linga ("we," "us," or "our") operates this website (the "Site"). We take your privacy seriously — especially given the personal nature of the topics we cover. This Privacy Policy explains what information we collect, how we use it, and your rights regarding that information.</p>
 
 <p>By using this Site, you confirm that you are at least 18 years of age and agree to the terms of this Privacy Policy.</p>
 
@@ -72,11 +72,9 @@ We do **not** use your information to:
 
 ## 3. Analytics
 
-We use **Google Analytics** (or a privacy-focused alternative such as Fathom or Plausible) to understand Site traffic and content performance. Analytics data is aggregated and does not identify you personally.
+We use **Google Analytics 4** (GA4, property ID G-071MTW1DP2) to understand Site traffic and content performance. Analytics data is aggregated and used solely to improve the Site. GA4 is configured with IP anonymization enabled.
 
-If using Google Analytics, data is processed under Google's Privacy Policy. You can opt out via the [Google Analytics Opt-out Browser Add-on](https://tools.google.com/dlpage/gaoptout).
-
-We encourage the use of privacy-preserving analytics. If you prefer a version of this Site with zero tracking, you may use a browser extension such as uBlock Origin.
+Data is processed under Google's Privacy Policy. You can opt out via the [Google Analytics Opt-out Browser Add-on](https://tools.google.com/dlpage/gaoptout) or by enabling "Do Not Track" in your browser.
 
 ---
 
@@ -87,7 +85,7 @@ We use the following categories of cookies:
 | Category | Purpose | Can Be Disabled? |
 |----------|---------|-----------------|
 | **Essential** | Age verification session storage, site functionality | No — site may not function correctly |
-| **Analytics** | Anonymous traffic measurement | Yes — via browser settings or opt-out link |
+| **Analytics** | Anonymous traffic measurement (Google Analytics 4) | Yes — via browser settings or opt-out link |
 | **Affiliate** | Tracking clicks to affiliate partners (set by third parties) | Yes — via browser settings |
 
 **Age verification:** We use `sessionStorage` (not a persistent cookie) to remember that you have confirmed your age during a browser session. This data is never transmitted to our servers.
@@ -106,7 +104,7 @@ Our Site contains affiliate links to third-party retailers. When you click an af
 
 We are not responsible for the privacy practices of third-party sites. We encourage you to review their privacy policies before making a purchase.
 
-Current affiliate partners include networks such as **ShareASale**, **Awin**, and direct brand programs. Each has its own privacy policy.
+Our current affiliate partners and networks include: **Lovense** (direct program), **We-Vibe** and **Dame** (Impact Radius), and **LELO**, **Womanizer**, **Satisfyer**, and **b-Vibe** (ShareASale). Each maintains its own privacy policy.
 
 ---
 
@@ -118,7 +116,6 @@ If you subscribe to our newsletter:
 - We use it solely to send editorial content you have requested
 - We do not sell or rent your email address to any third party
 - You may unsubscribe at any time via the link in any newsletter email
-- We use a third-party email service provider (such as Mailchimp or ConvertKit) to send newsletters; your email address is stored on their servers subject to their privacy policy
 
 ---
 
@@ -126,7 +123,7 @@ If you subscribe to our newsletter:
 
 We retain your data only as long as necessary:
 
-- **Analytics data** — aggregated, retained indefinitely; individual-level data deleted per our analytics provider's default schedule
+- **Analytics data** — aggregated, per Google Analytics 4 default retention schedule
 - **Email addresses** — retained until you unsubscribe, after which deleted within 30 days
 - **Contact form submissions** — retained for up to 12 months, then deleted
 - **Server logs** — retained for up to 90 days for security purposes
@@ -151,7 +148,7 @@ Under the California Consumer Privacy Act, you have the right to:
 
 To exercise your California rights, contact us at [hello@yogilinga.com](mailto:hello@yogilinga.com) with the subject line "CCPA Privacy Request."
 
-### Virginia, Colorado, Connecticut Residents
+### Virginia, Colorado, Connecticut, and Other State Residents
 Similar state privacy laws apply. Contact us to exercise your rights.
 
 ### European Users (GDPR)
@@ -167,13 +164,13 @@ This Site is intended exclusively for adults aged 18 and older. We do not knowin
 
 ## 10. Security
 
-We implement reasonable technical and organizational measures to protect your information, including HTTPS encryption on all pages. However, no internet transmission is 100% secure. We cannot guarantee absolute security and encourage you to be cautious about what personal information you share online.
+We implement reasonable technical and organizational measures to protect your information, including HTTPS encryption on all pages. However, no internet transmission is 100% secure. We cannot guarantee absolute security.
 
 ---
 
 ## 11. Changes to This Privacy Policy
 
-We may update this Privacy Policy periodically. When we do, we will update the "Last updated" date at the top of this page. Material changes will be noted prominently. Your continued use of the Site after any changes constitutes acceptance of the updated policy.
+We may update this Privacy Policy periodically. When we do, we will update the "Last updated" date at the top of this page. Your continued use of the Site after any changes constitutes acceptance of the updated policy.
 
 ---
 
@@ -181,8 +178,8 @@ We may update this Privacy Policy periodically. When we do, we will update the "
 
 If you have questions, concerns, or requests regarding this Privacy Policy, please contact us:
 
-**Yogi &amp; Linga**
-Email: [hello@yogilinga.com](mailto:hello@yogilinga.com)
+**Yogi &amp; Linga**  
+Email: [hello@yogilinga.com](mailto:hello@yogilinga.com)  
 Website: [yogilinga.com](https://yogilinga.com)
 
 We aim to respond to all privacy-related inquiries within 30 days.
