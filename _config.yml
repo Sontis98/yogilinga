@@ -11,6 +11,10 @@ markdown: kramdown
 highlighter: rouge
 permalink: /:categories/:title/
 
+# Include _pages directory so Jekyll processes it
+include:
+  - _pages
+
 # Pagination
 plugins:
   - jekyll-paginate
@@ -57,3 +61,4 @@ exclude:
   - vendor/cache/
   - vendor/gems/
   - vendor/ruby/
+  - brain/
