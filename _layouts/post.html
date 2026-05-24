@@ -22,10 +22,9 @@ layout: default
 
   <div class="article-body" itemprop="articleBody">
 
-    <!-- Affiliate disclosure for review/guide content -->
     {% if page.affiliate %}
     <div class="affiliate-note">
-      <strong>Disclosure:</strong> This article contains affiliate links. If you purchase through our links, we may earn a commission at no extra cost to you. This never influences our editorial opinions — read our full <a href="/affiliate-disclosure">Affiliate Disclosure</a>.
+      <strong>Disclosure:</strong> This article contains affiliate links. If you purchase through our links, we may earn a commission at no extra cost to you. This never influences our editorial opinions — read our full <a href="{{ '/affiliate-disclosure/' | relative_url }}">Affiliate Disclosure</a>.
     </div>
     {% endif %}
 
@@ -33,21 +32,37 @@ layout: default
 
   </div>
 
+  <!-- CTA after article -->
+  <div style="max-width: 720px; margin: 0 auto; padding: 0 2rem 2rem;">
+    <div class="callout" style="text-align: center; border-left: none; border-top: 0.5px solid var(--border); border-bottom: 0.5px solid var(--border); background: rgba(255,255,255,0.02);">
+      <p style="font-family: var(--font-serif); font-size: 1.15rem; font-style: italic; color: var(--cream); margin-bottom: 0.75rem;">Looking for a product recommendation?</p>
+      <p style="font-size: 0.82rem; color: var(--cream-dim); margin-bottom: 1.25rem;">Our buying guides cut through the noise and tell you exactly what to get — based on testing, not marketing copy.</p>
+      <a href="{{ '/guides/' | relative_url }}" style="display:inline-block; background: linear-gradient(135deg,#C9956C,#E8B89A); color: var(--wine-deep); font-size: 0.65rem; letter-spacing: 0.2em; text-transform: uppercase; padding: 12px 28px; font-family: var(--font-sans); font-weight: 500;">Browse Buying Guides</a>
+    </div>
+  </div>
+
   <!-- Related posts -->
-  {% assign related = site.posts | where_exp: "post", "post.url != page.url" | where_exp: "post", "post.categories contains page.categories[0]" | limit: 3 %}
+  {% assign related = site.posts | where_exp: "post", "post.url != page.url" | limit: 3 %}
   {% if related.size > 0 %}
-  <div class="section-wrap" style="padding-top: 0;">
+  <div class="section-wrap" style="padding-top: 1rem;">
     <div class="section-header">
       <h2 class="section-title">Related Reading</h2>
+      <a href="{{ '/wellness/' | relative_url }}" class="section-link">All articles →</a>
     </div>
     <div class="cards-grid">
       {% for post in related %}
       <a href="{{ post.url | relative_url }}" class="card" style="text-decoration: none;">
-        <div class="card-thumb-placeholder card-thumb-1">
+        {% if post.image %}
+        <div class="card-thumb">
+          <img src="{{ post.image | relative_url }}" alt="{{ post.title }}" loading="lazy">
+        </div>
+        {% else %}
+        <div class="card-thumb-placeholder card-thumb-{{ forloop.index }}">
           <span class="card-icon-letter">✦</span>
         </div>
+        {% endif %}
         <div class="card-body">
-          <p class="card-tag">{{ post.categories | first }}</p>
+          <p class="card-tag">{{ post.category | default: "Wellness" }}</p>
           <h3 class="card-title">{{ post.title }}</h3>
           <p class="card-excerpt">{{ post.excerpt | strip_html | truncate: 100 }}</p>
           <div class="card-meta">

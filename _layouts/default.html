@@ -5,26 +5,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>{% if page.title %}{{ page.title }} — {{ site.title }}{% else %}{{ site.title }} — Sexual Wellness & High-Tech Toys{% endif %}</title>
-  <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | truncate: 155 }}{% else %}{{ site.description }}{% endif %}">
-  <!-- SEO -->
+  <meta name="description" content="{% if page.description %}{{ page.description }}{% elsif page.excerpt %}{{ page.excerpt | strip_html | truncate: 155 }}{% else %}{{ site.description }}{% endif %}">
   {% seo %}
-  <!-- Canonical -->
   <link rel="canonical" href="{{ page.url | prepend: site.url }}">
-  <!-- Stylesheet -->
   <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
-  <!-- Favicon -->
   <link rel="icon" type="image/svg+xml" href="{{ '/assets/favicon.svg' | relative_url }}">
-  <!-- Open Graph -->
   <meta property="og:type" content="{% if page.layout == 'post' %}article{% else %}website{% endif %}">
   <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
-  <meta property="og:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | truncate: 155 }}{% else %}{{ site.description }}{% endif %}">
+  <meta property="og:description" content="{% if page.description %}{{ page.description }}{% elsif page.excerpt %}{{ page.excerpt | strip_html | truncate: 155 }}{% else %}{{ site.description }}{% endif %}">
   <meta property="og:url" content="{{ page.url | prepend: site.url }}">
   <meta property="og:site_name" content="{{ site.title }}">
   {% if page.image %}<meta property="og:image" content="{{ page.image | prepend: site.url }}">{% endif %}
-  <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
-  <!-- Schema.org -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -38,7 +31,6 @@
     {% endif %}
   }
   </script>
-  <!-- Google Analytics GA4 -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-071MTW1DP2"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -72,10 +64,33 @@
     <a href="{{ '/' | relative_url }}" class="site-logo" aria-label="{{ site.title }} home">Yogi &amp; Linga</a>
 
     <div class="nav-right">
+      <a href="{{ '/newsletter/' | relative_url }}">Newsletter</a>
       <a href="{{ '/about/' | relative_url }}">About</a>
       <a href="{{ '/contact/' | relative_url }}">Contact</a>
     </div>
+
+    <!-- HAMBURGER (mobile only) -->
+    <button class="nav-hamburger" id="navToggle" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
   </nav>
+
+  <!-- MOBILE MENU OVERLAY -->
+  <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+    <div class="mobile-menu-inner">
+      <div class="mobile-menu-links">
+        <a href="{{ '/reviews/' | relative_url }}" class="mobile-link">Reviews</a>
+        <a href="{{ '/wellness/' | relative_url }}" class="mobile-link">Wellness</a>
+        <a href="{{ '/guides/' | relative_url }}" class="mobile-link">Guides</a>
+        <a href="{{ '/about/' | relative_url }}" class="mobile-link">About</a>
+        <a href="{{ '/contact/' | relative_url }}" class="mobile-link">Contact</a>
+      </div>
+      <div class="mobile-menu-footer">
+        <a href="{{ '/affiliate-disclosure/' | relative_url }}">Disclosure</a>
+        <a href="{{ '/privacy/' | relative_url }}">Privacy</a>
+      </div>
+    </div>
+  </div>
 
   <!-- MARQUEE -->
   <div class="marquee-strip" aria-hidden="true">
@@ -88,7 +103,6 @@
       <span class="dot">✦</span> Independent reviews &nbsp;&nbsp;
       <span class="dot">✦</span> FTC compliant &nbsp;&nbsp;
       <span class="dot">✦</span> 100% private &nbsp;&nbsp;
-      <!-- Duplicate for seamless loop -->
       <span class="dot">✦</span> Medical-grade silicone &nbsp;&nbsp;
       <span class="dot">✦</span> App-controlled &nbsp;&nbsp;
       <span class="dot">✦</span> Sonic wave technology &nbsp;&nbsp;
@@ -104,6 +118,25 @@
   <main id="main-content" role="main">
     {{ content }}
   </main>
+
+  <!-- NEWSLETTER SIGNUP STRIP -->
+  <section class="newsletter-strip" aria-label="Newsletter signup">
+    <div class="newsletter-inner">
+      <div class="newsletter-text">
+        <p class="newsletter-eyebrow">Free Newsletter</p>
+        <h2 class="newsletter-heading">Honest reviews. No spam. Ever.</h2>
+        <p class="newsletter-sub">Join readers who get our weekly picks — the best new products, science reads, and buying advice, straight to your inbox.</p>
+      </div>
+      <form class="newsletter-form" id="newsletterForm" onsubmit="handleNewsletterSubmit(event)">
+        <div class="newsletter-input-row">
+          <input type="email" name="email" placeholder="your@email.com" required class="newsletter-input" autocomplete="email">
+          <button type="submit" class="newsletter-btn">Subscribe</button>
+        </div>
+        <p class="newsletter-fine">No spam. Unsubscribe anytime. We never sell your email.</p>
+        <p class="newsletter-success" id="newsletterSuccess" style="display:none;">✓ You're in! Check your inbox for a confirmation.</p>
+      </form>
+    </div>
+  </section>
 
   <!-- FOOTER -->
   <footer class="site-footer" role="contentinfo">
@@ -126,6 +159,7 @@
           <li><a href="{{ '/about/' | relative_url }}">About Us</a></li>
           <li><a href="{{ '/affiliate-disclosure/' | relative_url }}">Affiliate Disclosure</a></li>
           <li><a href="{{ '/contact/' | relative_url }}">Contact</a></li>
+          <li><a href="{{ '/newsletter/' | relative_url }}">Newsletter</a></li>
         </ul>
       </div>
       <div class="footer-col">
@@ -147,8 +181,9 @@
     </div>
   </footer>
 
-  <!-- AGE GATE SCRIPT -->
+  <!-- SCRIPTS -->
   <script>
+    // Age Gate
     (function() {
       if (sessionStorage.getItem('ageVerified') === 'true') {
         document.getElementById('ageGate').classList.add('hidden');
@@ -160,6 +195,38 @@
     }
     function denyAge() {
       window.location.href = 'https://www.google.com';
+    }
+
+    // Mobile menu
+    var navToggle = document.getElementById('navToggle');
+    var mobileMenu = document.getElementById('mobileMenu');
+    var body = document.body;
+    navToggle.addEventListener('click', function() {
+      var open = mobileMenu.classList.toggle('open');
+      navToggle.classList.toggle('open', open);
+      navToggle.setAttribute('aria-expanded', open.toString());
+      mobileMenu.setAttribute('aria-hidden', (!open).toString());
+      body.style.overflow = open ? 'hidden' : '';
+    });
+    // Close mobile menu when a link is clicked
+    mobileMenu.querySelectorAll('a').forEach(function(link) {
+      link.addEventListener('click', function() {
+        mobileMenu.classList.remove('open');
+        navToggle.classList.remove('open');
+        navToggle.setAttribute('aria-expanded', 'false');
+        mobileMenu.setAttribute('aria-hidden', 'true');
+        body.style.overflow = '';
+      });
+    });
+
+    // Newsletter submit
+    function handleNewsletterSubmit(e) {
+      e.preventDefault();
+      var email = e.target.querySelector('input[type="email"]').value;
+      var mailtoHref = 'mailto:hello@yogilinga.com?subject=Newsletter%20Signup&body=Please%20subscribe%20me%20to%20the%20Yogi%20%26%20Linga%20newsletter.%0A%0AEmail%3A%20' + encodeURIComponent(email);
+      window.location.href = mailtoHref;
+      document.getElementById('newsletterSuccess').style.display = 'block';
+      e.target.querySelector('.newsletter-input-row').style.display = 'none';
     }
   </script>
 

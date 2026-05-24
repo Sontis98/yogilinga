@@ -45,6 +45,10 @@ layout: default
   </div>
   {% endif %}
 
+  <!-- AD SLOT: Top of review (rectangle, 300x250 or responsive) -->
+  <!-- Replace with AdSense code once approved -->
+  <div class="ad-slot" id="ad-review-top" aria-hidden="true"></div>
+
   <div class="article-body">
 
     <div class="affiliate-note">
@@ -83,7 +87,7 @@ layout: default
     <div class="buy-box">
       <div class="buy-box-info">
         <h4>{{ page.product_name | default: page.title }}</h4>
-        <p>{{ page.buy_note | default: "Available with free US shipping · Discreet packaging guaranteed" }}</p>
+        <p>{{ page.buy_note | default: "Free US shipping · Discreet packaging guaranteed · Official retailer" }}</p>
       </div>
       <div style="display: flex; align-items: center; gap: 1.5rem; flex-wrap: wrap;">
         {% if page.price %}<span class="buy-box-price">{{ page.price }}</span>{% endif %}
@@ -104,6 +108,24 @@ layout: default
     </div>
     {% endif %}
 
+    <!-- AD SLOT: Mid-review (responsive) -->
+    <div class="ad-slot" id="ad-review-mid" aria-hidden="true"></div>
+
+    <!-- Newsletter inline CTA -->
+    <div style="margin: 2.5rem 0; padding: 2rem 2rem; background: rgba(201,149,108,0.05); border: 0.5px solid rgba(201,149,108,0.2); text-align: center;">
+      <p style="font-size: 0.62rem; letter-spacing: 0.25em; text-transform: uppercase; color: var(--rose-gold); margin-bottom: 0.6rem;">Free Newsletter</p>
+      <p style="font-family: var(--font-serif); font-size: 1.3rem; font-weight: 300; color: var(--cream); margin-bottom: 0.5rem;">New reviews, every week.</p>
+      <p style="font-size: 0.8rem; color: var(--cream-dim); margin-bottom: 1.25rem;">Get our latest picks and buying guides — no spam, unsubscribe anytime.</p>
+      <form onsubmit="handleNewsletterSubmit(event)" style="display:flex; gap:0; max-width:420px; margin:0 auto;">
+        <input type="email" placeholder="your@email.com" required
+          style="flex:1; background:rgba(255,255,255,0.05); border:0.5px solid rgba(201,149,108,0.4); border-right:none; color:var(--cream); font-family:var(--font-sans); font-size:0.85rem; padding:12px 16px; outline:none;">
+        <button type="submit"
+          style="background:linear-gradient(135deg,#C9956C,#E8B89A); color:var(--wine-deep); border:none; padding:12px 22px; font-family:var(--font-sans); font-size:0.65rem; font-weight:500; letter-spacing:0.18em; text-transform:uppercase; cursor:pointer; white-space:nowrap;">
+          Subscribe
+        </button>
+      </form>
+    </div>
+
   </div>
 
   <!-- More from this Brand -->
@@ -118,9 +140,11 @@ layout: default
       {% for review in brand_reviews %}
       <a href="{{ review.url | relative_url }}" class="card" style="text-decoration: none;">
         {% if review.image %}
-        <img src="{{ review.image | relative_url }}" alt="{{ review.title }}" style="width:100%;aspect-ratio:16/9;object-fit:cover;" loading="lazy">
+        <div class="card-thumb">
+          <img src="{{ review.image | relative_url }}" alt="{{ review.title }}" loading="lazy">
+        </div>
         {% else %}
-        <div class="card-thumb-placeholder"><span class="card-icon-letter">✦</span></div>
+        <div class="card-thumb-placeholder card-thumb-1"><span class="card-icon-letter">✦</span></div>
         {% endif %}
         <div class="card-body">
           <div style="display: flex; justify-content: space-between; align-items: center;">
@@ -139,5 +163,8 @@ layout: default
     </div>
   </div>
   {% endif %}
+
+  <!-- AD SLOT: Below-fold (leaderboard 728x90 or responsive) -->
+  <div class="ad-slot" id="ad-review-bottom" aria-hidden="true"></div>
 
 </article>

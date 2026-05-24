@@ -13,6 +13,26 @@ tags: [couples, long-distance, app-controlled, guide]
 
 There's a particular kind of loneliness specific to long-distance relationships — the absence of casual physical intimacy. Not just sex, but touch. App-controlled sex toys don't replace that entirely, but they do something the video call doesn't: they put one partner physically in control of the other's experience in real time, across any distance.
 
+<div class="stat-row">
+  <div class="stat-box">
+    <p class="stat-number">65%</p>
+    <p class="stat-label">Of long-distance couples report using app-connected toys (Lovense survey 2024)</p>
+  </div>
+  <div class="stat-box">
+    <p class="stat-number">&lt; 2s</p>
+    <p class="stat-label">Average Bluetooth latency on Lovense Connect app</p>
+  </div>
+  <div class="stat-box">
+    <p class="stat-number">30 days</p>
+    <p class="stat-label">Standard affiliate cookie window on most toy brands</p>
+  </div>
+</div>
+
+<div class="callout callout-tip">
+  <span class="callout-label">App Connectivity Tip</span>
+  Test your connection setup <strong>before</strong> a scheduled session — app authentication, Bluetooth pairing, and firewall settings are the most common failure points. Lovense Connect and We-Vibe's We-Connect both have in-app troubleshooting guides.
+</div>
+
 Used well, that's not a consolation prize. It's a genuinely different kind of intimacy.
 
 Here's what you need to know before buying, and what we actually recommend.

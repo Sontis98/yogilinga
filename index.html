@@ -224,3 +224,98 @@ description: "Science-backed reviews of premium sexual wellness products, body-s
     {% endif %}
   </div>
 </section>
+
+<!-- BEST PICKS (Editor's Choice) -->
+<section class="best-picks-section" aria-labelledby="best-picks-heading">
+  <div class="best-picks-inner">
+    <div class="section-header">
+      <h2 class="section-title" id="best-picks-heading">Editor's Picks</h2>
+      <a href="{{ '/reviews/' | relative_url }}" class="section-link">See all reviews →</a>
+    </div>
+    <p style="color: var(--cream-dim); font-size: 0.88rem; margin-bottom: 0; max-width: 560px;">The highest-scoring products from our testing lab — chosen for performance, safety, and value.</p>
+
+    <div class="picks-grid">
+      {% assign top_reviews = site.reviews | sort: 'score' | reverse | limit: 6 %}
+      {% for review in top_reviews %}
+      <a href="{{ review.url | relative_url }}" class="pick-card" style="text-decoration:none;">
+        <p class="pick-label">{{ review.category | default: "Review" }}</p>
+        <p class="pick-name">{{ review.title | replace: " Review", "" | truncate: 50 }}</p>
+        <p class="pick-score">{{ review.score }}/10</p>
+        <p class="pick-desc">{{ review.excerpt | strip_html | truncate: 100 }}</p>
+        <span class="pick-link">Read review →</span>
+      </a>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<!-- QUICK COMPARISON TABLE -->
+<section class="section-wrap" aria-labelledby="compare-heading">
+  <div class="section-header">
+    <h2 class="section-title" id="compare-heading">Quick Comparison</h2>
+    <a href="{{ '/guides/' | relative_url }}" class="section-link">All guides →</a>
+  </div>
+  <p style="color: var(--cream-dim); font-size: 0.88rem; margin-bottom: 2rem;">Top picks across categories — updated as we complete new reviews.</p>
+
+  <div class="comparison-table-wrap">
+    <table class="comparison-table" aria-label="Product comparison">
+      <thead>
+        <tr>
+          <th>Product</th>
+          <th>Category</th>
+          <th>Score</th>
+          <th>Best For</th>
+          <th>Price Range</th>
+          <th>Review</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% assign top5 = site.reviews | sort: 'score' | reverse | limit: 5 %}
+        {% for r in top5 %}
+        <tr{% if forloop.first %} class="winner-row"{% endif %}>
+          <td>{{ r.title | replace: " Review", "" }}{% if forloop.first %}<span class="winner-badge">Top Pick</span>{% endif %}</td>
+          <td>{{ r.category | default: "Vibrator" }}</td>
+          <td class="score-cell">{{ r.score }}/10</td>
+          <td>{{ r.excerpt | strip_html | truncate: 60 }}</td>
+          <td>{{ r.price | default: "See review" }}</td>
+          <td class="buy-cell"><a href="{{ r.url | relative_url }}">Read →</a></td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<!-- BUYING GUIDES -->
+<section class="section-wrap" aria-labelledby="guides-heading" style="padding-top: 0;">
+  <div class="section-header">
+    <h2 class="section-title" id="guides-heading">Buying Guides</h2>
+    <a href="{{ '/guides/' | relative_url }}" class="section-link">All guides →</a>
+  </div>
+
+  <div class="cards-grid">
+    {% assign guides = site.guides | limit: 3 %}
+    {% for guide in guides %}
+    <a href="{{ guide.url | relative_url }}" class="card" style="text-decoration: none;">
+      {% if guide.image %}
+      <div class="card-thumb">
+        <img src="{{ guide.image | relative_url }}" alt="{{ guide.title }}" loading="lazy">
+      </div>
+      {% else %}
+      <div class="card-thumb-placeholder card-thumb-{{ forloop.index }}">
+        <span class="card-icon-letter">◎</span>
+      </div>
+      {% endif %}
+      <div class="card-body">
+        <p class="card-tag">Buying Guide</p>
+        <h3 class="card-title">{{ guide.title }}</h3>
+        <p class="card-excerpt">{{ guide.excerpt | strip_html | truncate: 110 }}</p>
+        <div class="card-meta">
+          <span>{{ guide.date | date: "%b %-d, %Y" }}</span>
+          <span class="card-read-more">Read guide →</span>
+        </div>
+      </div>
+    </a>
+    {% endfor %}
+  </div>
+</section>

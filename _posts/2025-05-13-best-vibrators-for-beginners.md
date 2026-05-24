@@ -13,6 +13,30 @@ tags: [beginner, guide, vibrators, buying-guide]
 
 The sex toy industry has a first-time buyer problem. Walk into any online store and you'll find hundreds of products, each claiming to be "the best." The descriptions use terms like "rumbly motors" and "body-safe silicone" without explaining what those words mean or why they matter.
 
+
+<div class="stat-row">
+  <div class="stat-box">
+    <p class="stat-number">62%</p>
+    <p class="stat-label">Of women require clitoral stimulation to reach orgasm (OMGYES study)</p>
+  </div>
+  <div class="stat-box">
+    <p class="stat-number">$40–80</p>
+    <p class="stat-label">Sweet spot for quality body-safe silicone as a beginner</p>
+  </div>
+  <div class="stat-box">
+    <p class="stat-number">3 weeks</p>
+    <p class="stat-label">Minimum testing period before we score any product</p>
+  </div>
+</div>
+
+
+
+<div class="callout callout-tip">
+  <span class="callout-label">Before You Buy</span>
+  <strong>The single most important thing:</strong> confirm the toy is platinum-cured silicone, ABS plastic, or glass — not "jelly," "rubber," or unspecified "silicone blend." The material matters more than the brand name. See our <a href="/wellness/sex-toy-materials-guide/">materials guide</a> for how to check.
+</div>
+
+
 This guide is different. We'll explain what actually matters for beginners, what doesn't, and recommend specific products at specific price points that we've actually tested.
 
 ## What Beginners Actually Need to Know
