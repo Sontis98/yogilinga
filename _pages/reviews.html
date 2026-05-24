@@ -1,0 +1,186 @@
+---
+layout: default
+title: "Sex Toy Reviews — Independent & Science-Backed"
+description: "In-depth, independently tested reviews of premium sexual wellness products. Every product scored on motor quality, materials, app performance, and value."
+permalink: /reviews/
+---
+
+<style>
+.archive-hero {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 5rem 2rem 3.5rem;
+  text-align: center;
+}
+.archive-eyebrow {
+  font-size: 0.62rem;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: var(--rose-gold);
+  margin-bottom: 1.25rem;
+}
+.archive-headline {
+  font-family: var(--font-serif);
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 300;
+  line-height: 1.15;
+  color: var(--cream);
+  margin-bottom: 1rem;
+}
+.archive-lead {
+  font-size: 0.92rem;
+  line-height: 1.85;
+  color: var(--cream-dim);
+  max-width: 600px;
+  margin: 0 auto 2.5rem;
+}
+.filter-bar {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0 2rem 3rem;
+}
+.filter-btn {
+  font-family: var(--font-sans);
+  font-size: 0.62rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--cream-dim);
+  background: transparent;
+  border: 0.5px solid var(--border);
+  padding: 0.5rem 1.25rem;
+  cursor: pointer;
+  transition: all 0.25s;
+  text-decoration: none;
+  display: inline-block;
+}
+.filter-btn:hover,
+.filter-btn.active {
+  border-color: var(--rose-gold);
+  color: var(--rose-gold);
+}
+.archive-grid {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 2rem 6rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+.review-card {
+  background: rgba(255,255,255,0.025);
+  border: 0.5px solid var(--border);
+  text-decoration: none;
+  display: block;
+  transition: border-color 0.25s, transform 0.25s;
+}
+.review-card:hover {
+  border-color: var(--border-hover);
+  transform: translateY(-3px);
+}
+.review-card-thumb {
+  aspect-ratio: 16/9;
+  background: radial-gradient(circle at 30% 40%, var(--wine-light), var(--wine-deep));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-serif);
+  font-size: 2.5rem;
+  font-style: italic;
+  color: var(--rose-gold);
+  opacity: 0.5;
+}
+.review-card-body { padding: 1.5rem; }
+.review-card-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.75rem;
+}
+.review-card-tag {
+  font-size: 0.6rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--rose-gold);
+  opacity: 0.8;
+}
+.review-card-score {
+  font-size: 0.75rem;
+  font-weight: 400;
+  color: var(--rose-gold-bright);
+  letter-spacing: 0.05em;
+}
+.review-card-title {
+  font-family: var(--font-serif);
+  font-size: 1.2rem;
+  font-weight: 300;
+  line-height: 1.3;
+  color: var(--cream);
+  margin-bottom: 0.75rem;
+}
+.review-card-excerpt {
+  font-size: 0.8rem;
+  line-height: 1.75;
+  color: var(--cream-dim);
+  margin-bottom: 1.25rem;
+}
+.review-card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.7rem;
+  color: var(--cream-faint);
+  letter-spacing: 0.05em;
+}
+.review-card-cta { color: var(--rose-gold); }
+.score-bar-mini {
+  height: 2px;
+  background: linear-gradient(90deg, var(--rose-gold), var(--rose-gold-bright));
+  margin-top: 1rem;
+}
+@media (max-width: 900px) { .archive-grid { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 600px) { .archive-grid { grid-template-columns: 1fr; } }
+</style>
+
+<div class="archive-hero">
+  <p class="archive-eyebrow">Independent Reviews</p>
+  <h1 class="archive-headline">Every product, tested.<br>Every score, earned.</h1>
+  <p class="archive-lead">We buy or request press samples, test for a minimum of three weeks, and score each product on six criteria. No paid reviews. No editorial partnerships. Just honest assessments.</p>
+</div>
+
+<div class="filter-bar">
+  <span class="filter-btn active">All</span>
+  <span class="filter-btn">Vibrators</span>
+  <span class="filter-btn">App-Controlled</span>
+  <span class="filter-btn">Couples</span>
+  <span class="filter-btn">Luxury</span>
+</div>
+
+<div class="archive-grid">
+  {% assign all_reviews = site.reviews | sort: 'date' | reverse %}
+  {% for review in all_reviews %}
+  <a href="{{ review.url | relative_url }}" class="review-card">
+    {% if review.image %}
+    <img src="{{ review.image | relative_url }}" alt="{{ review.title }}" style="width:100%;aspect-ratio:16/9;object-fit:cover;" loading="lazy">
+    {% else %}
+    <div class="review-card-thumb">✦</div>
+    {% endif %}
+    <div class="review-card-body">
+      <div class="review-card-top">
+        <span class="review-card-tag">{{ review.category | default: "Review" }}</span>
+        {% if review.score %}<span class="review-card-score">{{ review.score }}/10</span>{% endif %}
+      </div>
+      <h2 class="review-card-title">{{ review.title }}</h2>
+      <p class="review-card-excerpt">{{ review.excerpt | strip_html | truncate: 110 }}</p>
+      <div class="review-card-footer">
+        <span>{{ review.date | date: "%b %-d, %Y" }}</span>
+        <span class="review-card-cta">Read review →</span>
+      </div>
+      {% if review.score %}
+      <div class="score-bar-mini" style="width: {{ review.score | times: 10 }}%"></div>
+      {% endif %}
+    </div>
+  </a>
+  {% endfor %}
+</div>

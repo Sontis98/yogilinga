@@ -1,0 +1,230 @@
+---
+layout: default
+title: "The Journal — Sexual Wellness Research & Articles"
+description: "Evidence-based articles on sexual health, neuroscience of pleasure, body safety, and mental wellbeing. Written by researchers who read the actual studies."
+permalink: /wellness/
+---
+
+<style>
+.archive-hero {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 5rem 2rem 3.5rem;
+  text-align: center;
+}
+.archive-eyebrow {
+  font-size: 0.62rem;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: var(--rose-gold);
+  margin-bottom: 1.25rem;
+}
+.archive-headline {
+  font-family: var(--font-serif);
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 300;
+  line-height: 1.15;
+  color: var(--cream);
+  margin-bottom: 1rem;
+}
+.archive-lead {
+  font-size: 0.92rem;
+  line-height: 1.85;
+  color: var(--cream-dim);
+  max-width: 600px;
+  margin: 0 auto;
+}
+.journal-layout {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 3rem 2rem 6rem;
+  display: grid;
+  grid-template-columns: 1fr 320px;
+  gap: 4rem;
+  align-items: start;
+}
+.journal-main {}
+.featured-post {
+  border: 0.5px solid var(--border);
+  padding: 2.5rem;
+  margin-bottom: 2rem;
+  display: block;
+  text-decoration: none;
+  transition: border-color 0.25s;
+  background: rgba(255,255,255,0.02);
+}
+.featured-post:hover { border-color: var(--border-hover); }
+.featured-post-label {
+  font-size: 0.6rem;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: var(--rose-gold);
+  margin-bottom: 1rem;
+}
+.featured-post-title {
+  font-family: var(--font-serif);
+  font-size: clamp(1.5rem, 2.5vw, 2rem);
+  font-weight: 300;
+  line-height: 1.25;
+  color: var(--cream);
+  margin-bottom: 1rem;
+}
+.featured-post-excerpt {
+  font-size: 0.88rem;
+  line-height: 1.85;
+  color: var(--cream-dim);
+  margin-bottom: 1.5rem;
+}
+.featured-post-meta {
+  font-size: 0.7rem;
+  color: var(--cream-faint);
+  display: flex;
+  gap: 1.5rem;
+}
+.post-list {}
+.post-list-item {
+  display: block;
+  text-decoration: none;
+  padding: 1.5rem 0;
+  border-bottom: 0.5px solid var(--border);
+  transition: opacity 0.2s;
+}
+.post-list-item:first-child { border-top: 0.5px solid var(--border); }
+.post-list-item:hover { opacity: 0.75; }
+.post-list-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 0.5rem;
+}
+.post-list-tag {
+  font-size: 0.6rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--rose-gold);
+  opacity: 0.8;
+}
+.post-list-date {
+  font-size: 0.68rem;
+  color: var(--cream-faint);
+}
+.post-list-title {
+  font-family: var(--font-serif);
+  font-size: 1.15rem;
+  font-weight: 300;
+  line-height: 1.35;
+  color: var(--cream);
+  margin-bottom: 0.4rem;
+}
+.post-list-excerpt {
+  font-size: 0.78rem;
+  color: var(--cream-dim);
+  line-height: 1.7;
+}
+.journal-sidebar {}
+.sidebar-block {
+  border: 0.5px solid var(--border);
+  padding: 1.75rem;
+  margin-bottom: 1.5rem;
+  background: rgba(255,255,255,0.015);
+}
+.sidebar-label {
+  font-size: 0.58rem;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: var(--rose-gold);
+  opacity: 0.8;
+  margin-bottom: 1.25rem;
+}
+.sidebar-topic {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.6rem 0;
+  border-bottom: 0.5px solid var(--border);
+  font-size: 0.8rem;
+  color: var(--cream-dim);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+.sidebar-topic:hover { color: var(--rose-gold); }
+.sidebar-topic:last-child { border-bottom: none; }
+.sidebar-count {
+  font-size: 0.68rem;
+  color: var(--cream-faint);
+}
+@media (max-width: 900px) {
+  .journal-layout { grid-template-columns: 1fr; }
+  .journal-sidebar { display: none; }
+}
+</style>
+
+<div class="archive-hero">
+  <p class="archive-eyebrow">The Journal</p>
+  <h1 class="archive-headline">Wellness research,<br>plainly explained.</h1>
+  <p class="archive-lead">Sexual health is a legitimate field of science. We read the studies so you don't have to — and translate what they actually say without the hype.</p>
+</div>
+
+<div class="journal-layout">
+  <div class="journal-main">
+
+    {% assign posts = site.posts | sort: 'date' | reverse %}
+    {% if posts.size > 0 %}
+
+      {% assign featured = posts | first %}
+      <a href="{{ featured.url | relative_url }}" class="featured-post">
+        <p class="featured-post-label">Latest Article</p>
+        <h2 class="featured-post-title">{{ featured.title }}</h2>
+        <p class="featured-post-excerpt">{{ featured.excerpt | strip_html | truncate: 200 }}</p>
+        <div class="featured-post-meta">
+          <span>{{ featured.date | date: "%B %-d, %Y" }}</span>
+          <span>{{ featured.read_time | default: "6" }} min read</span>
+          <span>{{ featured.author | default: "Editorial Team" }}</span>
+        </div>
+      </a>
+
+      <div class="post-list">
+        {% for post in posts offset: 1 %}
+        <a href="{{ post.url | relative_url }}" class="post-list-item">
+          <div class="post-list-top">
+            <span class="post-list-tag">{{ post.categories | first | default: "Wellness" }}</span>
+            <span class="post-list-date">{{ post.date | date: "%b %-d, %Y" }}</span>
+          </div>
+          <h3 class="post-list-title">{{ post.title }}</h3>
+          <p class="post-list-excerpt">{{ post.excerpt | strip_html | truncate: 130 }}</p>
+        </a>
+        {% endfor %}
+      </div>
+
+    {% else %}
+      <p style="color: var(--cream-dim); font-size: 0.9rem;">Articles coming soon.</p>
+    {% endif %}
+
+  </div>
+
+  <aside class="journal-sidebar">
+    <div class="sidebar-block">
+      <p class="sidebar-label">Topics</p>
+      <a href="{{ '/wellness/' | relative_url }}" class="sidebar-topic">
+        <span>Neuroscience</span><span class="sidebar-count">→</span>
+      </a>
+      <a href="{{ '/wellness/' | relative_url }}" class="sidebar-topic">
+        <span>Mental Health</span><span class="sidebar-count">→</span>
+      </a>
+      <a href="{{ '/wellness/' | relative_url }}" class="sidebar-topic">
+        <span>Body Safety</span><span class="sidebar-count">→</span>
+      </a>
+      <a href="{{ '/wellness/' | relative_url }}" class="sidebar-topic">
+        <span>Relationships</span><span class="sidebar-count">→</span>
+      </a>
+      <a href="{{ '/wellness/' | relative_url }}" class="sidebar-topic">
+        <span>Sleep & Recovery</span><span class="sidebar-count">→</span>
+      </a>
+    </div>
+
+    <div class="sidebar-block">
+      <p class="sidebar-label">Our Promise</p>
+      <p style="font-size: 0.8rem; line-height: 1.8; color: var(--cream-dim);">Every article cites peer-reviewed sources. We note when research is preliminary or limited in scope. We don't publish wellness content to fill space — only when we have something meaningful to add.</p>
+    </div>
+  </aside>
+</div>

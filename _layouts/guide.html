@@ -1,0 +1,59 @@
+---
+layout: default
+---
+
+<article itemscope itemtype="https://schema.org/Article">
+
+  <header class="article-header">
+    <p class="article-category">{{ page.category | default: "Guide" | upcase }}</p>
+    <h1 class="article-title" itemprop="headline">{{ page.title }}</h1>
+    <div class="article-meta">
+      <span itemprop="author">{{ page.author | default: site.author }}</span>
+      <span>{{ page.date | date: "%B %-d, %Y" }}</span>
+      <span>{{ page.read_time | default: "10" }} min read</span>
+    </div>
+  </header>
+
+  <div class="article-body" itemprop="articleBody">
+
+    <div class="affiliate-note">
+      <strong>Disclosure:</strong> This guide contains affiliate links. If you purchase through our links, we may earn a commission at no extra cost to you. This never influences our editorial opinions — read our full <a href="{{ '/affiliate-disclosure/' | relative_url }}">Affiliate Disclosure</a>.
+    </div>
+
+    {{ content }}
+
+  </div>
+
+  <!-- Related Reviews -->
+  {% assign related_reviews = site.reviews | where_exp: "r", "r.url != page.url" | limit: 3 %}
+  {% if related_reviews.size > 0 %}
+  <div class="section-wrap" style="padding-top: 0;">
+    <div class="section-header">
+      <h2 class="section-title">Related Reviews</h2>
+      <a href="{{ '/reviews/' | relative_url }}" class="section-link">All reviews →</a>
+    </div>
+    <div class="cards-grid">
+      {% for review in related_reviews %}
+      <a href="{{ review.url | relative_url }}" class="card" style="text-decoration: none;">
+        <div class="card-thumb-placeholder card-thumb-{{ forloop.index }}">
+          <span class="card-icon-letter">✦</span>
+        </div>
+        <div class="card-body">
+          <div style="display: flex; justify-content: space-between; align-items: center;">
+            <p class="card-tag">{{ review.category | default: "Review" }}</p>
+            {% if review.score %}<span class="score-badge">{{ review.score }}/10</span>{% endif %}
+          </div>
+          <h3 class="card-title">{{ review.title }}</h3>
+          <p class="card-excerpt">{{ review.excerpt | strip_html | truncate: 100 }}</p>
+          <div class="card-meta">
+            <span>{{ review.date | date: "%b %-d, %Y" }}</span>
+            <span class="card-read-more">Read →</span>
+          </div>
+        </div>
+      </a>
+      {% endfor %}
+    </div>
+  </div>
+  {% endif %}
+
+</article>
