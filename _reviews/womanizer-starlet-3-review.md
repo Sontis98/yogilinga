@@ -1,7 +1,6 @@
 ---
 title: "Womanizer Starlet 3 Review: Entry-Level Air Pulse Done Right"
 date: 2025-06-01
-image: /assets/images/reviews/womanizer-starlet-3.jpg
 category: "Air Pulse · Womanizer"
 brand: "Womanizer"
 product_name: "Womanizer Starlet 3"
@@ -9,6 +8,8 @@ price: "$69"
 buy_url: "https://www.womanizer.com/starlet-3"
 buy_note: "Free shipping · Discreet packaging · 2-year warranty"
 score: 8.5
+image: "/assets/images/reviews/womanizer-starlet-3-review.jpg"
+image_alt: "Womanizer Starlet 3 review"
 read_time: 7
 author: "Sasha Mercer"
 excerpt: "The Womanizer Starlet 3 is the most affordable way to experience genuine Womanizer quality. Quieter and better-built than Satisfyer at a comparable price — a strong recommendation for first-time air pulse buyers."
@@ -23,9 +24,6 @@ scores:
     value: 9
   - name: "Ease of Use"
     value: 9
-related_guide_url: "/guides/how-to-choose-first-vibrator/"
-related_guide_title: "How to Choose Your First Vibrator: The No-Nonsense Guide"
-related_guide_desc: "Body-safe materials, stimulation types, and the brands worth trusting — everything a first-time buyer needs."
 ---
 
 At $69, the Womanizer Starlet 3 competes directly with the Satisfyer Pro 2 ($38) and Pro Penguin ($42). The $30 premium buys meaningfully better build quality, quieter operation, and the Womanizer brand's more refined nozzle design.

@@ -1,7 +1,6 @@
 ---
 title: "We-Vibe Tango X Review: The Most Powerful Bullet Vibrator"
 date: 2025-05-21
-image: /assets/images/reviews/we-vibe-tango-x.jpg
 category: "Bullet · We-Vibe"
 brand: "We-Vibe"
 product_name: "We-Vibe Tango X"
@@ -9,6 +8,8 @@ price: "$99"
 buy_url: "https://www.we-vibe.com/tango-x"
 buy_note: "Free shipping · Discreet packaging · 2-year warranty"
 score: 9.0
+image: "/assets/images/reviews/we-vibe-tango-x-review.jpg"
+image_alt: "We-Vibe Tango X review"
 read_time: 8
 author: "Sasha Mercer"
 excerpt: "The We-Vibe Tango X delivers the most powerful, rumbly vibration in the bullet vibrator category. A serious upgrade from the original Tango — still the benchmark at its price point."

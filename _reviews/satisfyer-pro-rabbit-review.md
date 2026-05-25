@@ -1,7 +1,6 @@
 ---
 title: "Satisfyer Feel Good Rabbit Review: Best Budget Dual Stimulation Toy"
 date: 2025-05-28
-image: /assets/images/reviews/satisfyer-pro-rabbit.jpg
 category: "Rabbit · Satisfyer"
 brand: "Satisfyer"
 product_name: "Satisfyer Feel Good Rabbit"
@@ -9,6 +8,8 @@ price: "$49"
 buy_url: "https://www.satisfyer.com/feel-good-rabbit"
 buy_note: "Free shipping on orders over $50 · Discreet packaging"
 score: 7.8
+image: "/assets/images/reviews/satisfyer-pro-rabbit-review.jpg"
+image_alt: "Satisfyer Feel Good Rabbit review"
 read_time: 8
 author: "Sasha Mercer"
 excerpt: "The Satisfyer Feel Good Rabbit delivers dual stimulation at an accessible price point. The motors are adequate rather than exceptional, but for a first rabbit vibrator it's a solid entry point."

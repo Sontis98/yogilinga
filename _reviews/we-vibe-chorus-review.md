@@ -1,7 +1,6 @@
 ---
 title: "We-Vibe Chorus Review: The Best Couples Vibrator of 2025"
 date: 2025-05-20
-image: /assets/images/reviews/we-vibe-chorus.jpg
 category: "Couples · We-Vibe"
 brand: "We-Vibe"
 product_name: "We-Vibe Chorus"
@@ -9,6 +8,8 @@ price: "$199"
 buy_url: "https://www.we-vibe.com/chorus"
 buy_note: "Free shipping · Discreet packaging · 2-year warranty"
 score: 9.2
+image: "/assets/images/reviews/we-vibe-chorus-review.jpg"
+image_alt: "We-Vibe Chorus review"
 read_time: 10
 author: "Rowan Ellis"
 excerpt: "The We-Vibe Chorus is the most sophisticated couples vibrator on the market — flexible fit, squeeze remote, and a genuinely excellent app. Our highest-rated couples toy."
@@ -23,9 +24,6 @@ scores:
     value: 8.5
   - name: "Value"
     value: 8
-related_guide_url: "/guides/couples-toys-guide/"
-related_guide_title: "The Best Couples Sex Toys: A Guide to Shared Pleasure"
-related_guide_desc: "How to choose a wearable, remote-controlled, or app-enabled toy that works for both partners."
 ---
 
 The We-Vibe Chorus is one of those rare products that actually delivers on its marketing. Designed for couples to use together during penetrative sex, it works as advertised — and it does so with better engineering than anything else in this category.

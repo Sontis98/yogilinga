@@ -1,7 +1,6 @@
 ---
 title: "Satisfyer Love Triangle Review: Air Pulse Meets Couples Play"
 date: 2025-05-29
-image: /assets/images/reviews/satisfyer-love-triangle.jpg
 category: "Couples · Satisfyer"
 brand: "Satisfyer"
 product_name: "Satisfyer Love Triangle"
@@ -9,6 +8,8 @@ price: "$65"
 buy_url: "https://www.satisfyer.com/love-triangle"
 buy_note: "Free shipping on orders over $50 · Discreet packaging"
 score: 8.3
+image: "/assets/images/reviews/satisfyer-love-triangle-review.jpg"
+image_alt: "Satisfyer Love Triangle review"
 read_time: 8
 author: "Rowan Ellis"
 excerpt: "The Satisfyer Love Triangle combines air pulse with a wearable couples design — a unique position in the market. Solid app, comfortable fit, and Satisfyer's reliable air pulse technology."

@@ -12,7 +12,7 @@ score: 9.2
 price: "$119"
 buy_url: "https://lovense.com/anal/edge-2"
 buy_note: "Free shipping · Discreet billing · 1-year warranty"
-image: /assets/images/reviews/lovense-edge-2.jpg
+image: "/assets/images/reviews/lovense-edge-2-review.jpg"
 image_alt: "Lovense Edge 2 prostate massager"
 excerpt: "The Edge 2 is a dual-motor prostate massager with a flexible arm design that adjusts to anatomy and delivers both internal and external stimulation via app. After four weeks, it's our top pick in the prostate massager category."
 scores:
@@ -29,9 +29,6 @@ scores:
   - name: "Value for Money"
     value: 9.0
 tags: [prostate, anal, app-controlled, dual-motor, men, couples]
-related_guide_url: "/guides/app-controlled-sex-toys-guide/"
-related_guide_title: "App-Controlled Sex Toys: The Complete 2026 Guide"
-related_guide_desc: "How Lovense, We-Vibe, and other app ecosystems compare — range, reliability, and partner features."
 ---
 
 Prostate stimulation is one of the most physiologically reliable sources of intense male orgasm — the "male G-spot" framing is anatomically accurate. The prostate is a walnut-sized gland located 2–3 inches inside the rectum along the anterior wall, densely packed with nerve endings and directly involved in ejaculation.

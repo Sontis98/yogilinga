@@ -1,7 +1,6 @@
 ---
 title: "Womanizer Classic 2 Review: Reliable Mid-Range Air Pulse"
 date: 2025-06-03
-image: /assets/images/reviews/womanizer-classic-2.jpg
 category: "Air Pulse · Womanizer"
 brand: "Womanizer"
 product_name: "Womanizer Classic 2"
@@ -9,6 +8,8 @@ price: "$99"
 buy_url: "https://www.womanizer.com/classic-2"
 buy_note: "Free shipping · Discreet packaging · 2-year warranty"
 score: 8.6
+image: "/assets/images/reviews/womanizer-classic-2-review.jpg"
+image_alt: "Womanizer Classic 2 review"
 read_time: 7
 author: "Sasha Mercer"
 excerpt: "The Womanizer Classic 2 hits the sweet spot between the entry-level Starlet and the premium Liberty 2 — more intensity settings than the Starlet, lower price than the Liberty. A reliable mid-range choice."

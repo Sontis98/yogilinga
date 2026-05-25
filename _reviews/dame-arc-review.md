@@ -1,7 +1,6 @@
 ---
 title: "Dame Arc Review: The Most Ergonomic G-Spot Vibrator"
 date: 2025-06-05
-image: /assets/images/reviews/dame-arc.jpg
 category: "G-Spot · Dame"
 brand: "Dame Products"
 product_name: "Dame Arc"
@@ -9,6 +8,8 @@ price: "$95"
 buy_url: "https://www.dameproducts.com/arc"
 buy_note: "Free shipping · Discreet packaging · 1-year warranty"
 score: 8.7
+image: "/assets/images/reviews/dame-arc-review.jpg"
+image_alt: "Dame Arc review"
 read_time: 8
 author: "Sasha Mercer"
 excerpt: "The Dame Arc's dramatically curved shape isn't aesthetic — it's functional. The arc positions the motor directly against the G-spot with minimal effort and maintains that contact through movement. The most ergonomic G-spot vibrator we've tested."
@@ -23,9 +24,6 @@ scores:
     value: 9
   - name: "Value"
     value: 8.5
-related_guide_url: "/guides/lubricant-guide/"
-related_guide_title: "The Complete Guide to Personal Lubricants"
-related_guide_desc: "Which lube is safe with your toy — water-based vs silicone vs oil, ingredient warnings, and top picks."
 ---
 
 The Dame Arc's defining characteristic is its dramatic curve — a shape that looks unusual but makes functional sense. The arc is designed to position the motor precisely against the anterior vaginal wall (G-spot) without requiring the user to angle, twist, or adjust during use.

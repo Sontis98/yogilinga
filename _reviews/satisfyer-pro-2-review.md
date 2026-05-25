@@ -1,7 +1,6 @@
 ---
 title: "Satisfyer Pro 2 Review: The Best Budget Air Pulse Vibrator"
 date: 2025-05-25
-image: /assets/images/reviews/satisfyer-pro-2.jpg
 category: "Air Pulse · Satisfyer"
 brand: "Satisfyer"
 product_name: "Satisfyer Pro 2"
@@ -9,6 +8,8 @@ price: "$38"
 buy_url: "https://www.satisfyer.com/pro-2"
 buy_note: "Free shipping on orders over $50 · Discreet packaging"
 score: 8.4
+image: "/assets/images/reviews/satisfyer-pro-2-review.jpg"
+image_alt: "Satisfyer Pro 2 review"
 read_time: 8
 author: "Sasha Mercer"
 excerpt: "The Satisfyer Pro 2 delivers air pulse stimulation at a price that's hard to argue with. An excellent entry point into the category — and genuinely better than toys costing three times as much."
@@ -23,9 +24,6 @@ scores:
     value: 8.5
   - name: "Noise Level"
     value: 7
-related_guide_url: "/guides/how-to-choose-first-vibrator/"
-related_guide_title: "How to Choose Your First Vibrator: The No-Nonsense Guide"
-related_guide_desc: "Body-safe materials, stimulation types, and the brands worth trusting — everything a first-time buyer needs."
 ---
 
 At $38, the Satisfyer Pro 2 is the most accessible entry point into air pulse (sonic wave) stimulation. It's also genuinely good — not "good for the price," but good by any standard.

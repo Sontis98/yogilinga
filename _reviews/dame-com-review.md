@@ -1,7 +1,6 @@
 ---
 title: "Dame Com Review: Hands-Free Suction Toy for Couples"
 date: 2025-06-08
-image: /assets/images/reviews/dame-com.jpg
 category: "Couples · Dame"
 brand: "Dame Products"
 product_name: "Dame Com"
@@ -9,6 +8,8 @@ price: "$95"
 buy_url: "https://www.dameproducts.com/com"
 buy_note: "Free shipping · Discreet packaging · 1-year warranty"
 score: 8.2
+image: "/assets/images/reviews/dame-com-review.jpg"
+image_alt: "Dame Com review"
 read_time: 8
 author: "Sasha Mercer"
 excerpt: "The Dame Com combines suction and vibration in a hands-free couples form — a smaller, more affordable alternative to the Eva II with a different stimulation approach. Effective for the right anatomy."

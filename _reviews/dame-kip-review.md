@@ -1,7 +1,6 @@
 ---
 title: "Dame Kip Review: The Waterproof Bullet Built for Discretion"
 date: 2025-06-06
-image: /assets/images/reviews/dame-kip.jpg
 category: "Bullet · Dame"
 brand: "Dame Products"
 product_name: "Dame Kip"
@@ -9,6 +8,8 @@ price: "$75"
 buy_url: "https://www.dameproducts.com/kip"
 buy_note: "Free shipping · Discreet packaging · 1-year warranty"
 score: 8.3
+image: "/assets/images/reviews/dame-kip-review.jpg"
+image_alt: "Dame Kip review"
 read_time: 7
 author: "Sasha Mercer"
 excerpt: "The Dame Kip is a fully waterproof bullet vibrator with a genuinely discreet form — it looks like a lip balm or marker. Excellent motor quality, thoughtful design, and a shape that works for targeted clitoral stimulation."

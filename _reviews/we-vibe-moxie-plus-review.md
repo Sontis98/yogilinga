@@ -1,7 +1,6 @@
 ---
 title: "We-Vibe Moxie+ Review: Best Wearable Panty Vibrator"
 date: 2025-05-22
-image: /assets/images/reviews/we-vibe-moxie-plus.jpg
 category: "Wearable · We-Vibe"
 brand: "We-Vibe"
 product_name: "We-Vibe Moxie+"
@@ -9,6 +8,8 @@ price: "$119"
 buy_url: "https://www.we-vibe.com/moxie-plus"
 buy_note: "Free shipping · Discreet packaging · 2-year warranty"
 score: 8.7
+image: "/assets/images/reviews/we-vibe-moxie-plus-review.jpg"
+image_alt: "We-Vibe Moxie+ review"
 read_time: 8
 author: "Sasha Mercer"
 excerpt: "The We-Vibe Moxie+ is the best panty vibrator for partner play and public use — magnetic clip, app control, and the rumbly motor quality We-Vibe is known for."
@@ -23,9 +24,6 @@ scores:
     value: 8.5
   - name: "Value"
     value: 8
-related_guide_url: "/guides/couples-toys-guide/"
-related_guide_title: "The Best Couples Sex Toys: A Guide to Shared Pleasure"
-related_guide_desc: "How to choose a wearable, remote-controlled, or app-enabled toy that works for both partners."
 ---
 
 The We-Vibe Moxie+ is a panty vibrator — a flat, clip-on toy worn inside underwear for external clitoral stimulation. It's designed for discreet wear: at a restaurant, in a theater, on a walk. Your partner controls it via app from any distance.

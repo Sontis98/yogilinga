@@ -1,7 +1,6 @@
 ---
 title: "Womanizer Premium 2 Review: The Quietest, Most Refined Air Pulse Toy"
 date: 2025-05-30
-image: /assets/images/reviews/womanizer-premium-2.jpg
 category: "Air Pulse · Womanizer"
 brand: "Womanizer"
 product_name: "Womanizer Premium 2"
@@ -9,6 +8,8 @@ price: "$219"
 buy_url: "https://www.womanizer.com/premium-2"
 buy_note: "Free shipping · Discreet packaging · 2-year warranty"
 score: 9.3
+image: "/assets/images/reviews/womanizer-premium-2-review.jpg"
+image_alt: "Womanizer Premium 2 review"
 read_time: 10
 author: "Rowan Ellis"
 excerpt: "The Womanizer Premium 2 is the benchmark air pulse toy — whisper-quiet, deeply effective, and built to last. The Autopilot mode alone justifies the price for many users."
@@ -23,9 +24,6 @@ scores:
     value: 9
   - name: "Value"
     value: 8.5
-related_guide_url: "/guides/how-to-choose-first-vibrator/"
-related_guide_title: "How to Choose Your First Vibrator: The No-Nonsense Guide"
-related_guide_desc: "Body-safe materials, stimulation types, and the brands worth trusting — everything a first-time buyer needs."
 ---
 
 The Womanizer Premium 2 is the most refined air pulse toy on the market. At $219 it commands a premium — and justifies it through motor quality, near-silent operation, and Autopilot mode, a feature no other brand has successfully replicated.

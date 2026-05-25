@@ -12,7 +12,7 @@ score: 8.6
 price: "$99"
 buy_url: "https://lovense.com/vibrator/ferri"
 buy_note: "Free shipping · Discreet billing · 1-year warranty"
-image: /assets/images/reviews/lovense-ferri.jpg
+image: "/assets/images/reviews/lovense-ferri-review.jpg"
 image_alt: "Lovense Ferri magnetic panty vibrator"
 excerpt: "The Lovense Ferri attaches to underwear via a magnetic clip and stays in place without straps or harnesses. At $99, it's the most practical panty vibrator we've tested for both solo and partner-controlled use."
 scores:
@@ -29,9 +29,6 @@ scores:
   - name: "Value for Money"
     value: 9.0
 tags: [panty-vibrator, wearable, app-controlled, clitoral, discreet, long-distance]
-related_guide_url: "/guides/couples-toys-guide/"
-related_guide_title: "The Best Couples Sex Toys: A Guide to Shared Pleasure"
-related_guide_desc: "How to choose a wearable, remote-controlled, or app-enabled toy that works for both partners."
 ---
 
 The category of "panty vibrators" has a design problem. Most rely on fabric pockets or harnesses to hold the toy in place — systems that work in theory and slip in practice.

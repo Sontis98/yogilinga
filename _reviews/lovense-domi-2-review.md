@@ -12,7 +12,7 @@ score: 8.7
 price: "$89"
 buy_url: "https://lovense.com/vibrator/domi-2"
 buy_note: "Free shipping · Discreet billing · 1-year warranty"
-image: /assets/images/reviews/lovense-domi-2.jpg
+image: "/assets/images/reviews/lovense-domi-2-review.jpg"
 image_alt: "Lovense Domi 2 wand vibrator"
 excerpt: "Wand vibrators are the most powerful category of vibrator — and the Lovense Domi 2 adds app control to that power at a price that undercuts the Magic Wand Rechargeable by $30. Here's whether it's worth it."
 scores:
@@ -29,9 +29,6 @@ scores:
   - name: "Value for Money"
     value: 9.2
 tags: [wand, powerful, app-controlled, clitoral, versatile, couples]
-related_guide_url: "/guides/app-controlled-sex-toys-guide/"
-related_guide_title: "App-Controlled Sex Toys: The Complete 2026 Guide"
-related_guide_desc: "How Lovense, We-Vibe, and other app ecosystems compare — range, reliability, and partner features."
 ---
 
 Wand vibrators occupy a specific niche: they produce more power than other vibrator types, making them effective for users who need stronger stimulation, those who find smaller toys insufficient, and anyone who wants reliable results quickly.

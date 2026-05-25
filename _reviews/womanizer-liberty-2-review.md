@@ -1,7 +1,6 @@
 ---
 title: "Womanizer Liberty 2 Review: Premium Air Pulse, Travel-Ready"
 date: 2025-05-31
-image: /assets/images/reviews/womanizer-liberty-2.jpg
 category: "Air Pulse · Womanizer"
 brand: "Womanizer"
 product_name: "Womanizer Liberty 2"
@@ -9,6 +8,8 @@ price: "$119"
 buy_url: "https://www.womanizer.com/liberty-2"
 buy_note: "Free shipping · Discreet packaging · 2-year warranty"
 score: 8.9
+image: "/assets/images/reviews/womanizer-liberty-2-review.jpg"
+image_alt: "Womanizer Liberty 2 review"
 read_time: 8
 author: "Sasha Mercer"
 excerpt: "The Womanizer Liberty 2 brings Womanizer's core Pleasure Air technology into a compact, travel-friendly design at a more accessible price. The best mid-range air pulse toy."
@@ -23,9 +24,6 @@ scores:
     value: 9
   - name: "Value"
     value: 8.5
-related_guide_url: "/guides/lubricant-guide/"
-related_guide_title: "The Complete Guide to Personal Lubricants"
-related_guide_desc: "Which lube is safe with your toy — water-based vs silicone vs oil, ingredient warnings, and top picks."
 ---
 
 The Womanizer Liberty 2 is the middle ground in Womanizer's lineup: more powerful and refined than the entry-level Starlet, but without the Autopilot mode and highest-tier motor of the Premium 2. At $119 it's a strong value — particularly for users who travel or want a more discreet form factor.

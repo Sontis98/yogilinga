@@ -12,7 +12,7 @@ score: 9.0
 price: "$119"
 buy_url: "https://example-affiliate-link.com/lovense-lush-3"
 buy_note: "Free shipping · 1-year warranty · Discreet billing"
-image: /assets/images/reviews/lovense-lush-3.jpg
+image: "/assets/images/reviews/lovense-lush-3-review.jpg"
 image_alt: "Lovense Lush 3 wearable vibrator on neutral background"
 excerpt: "The Lovense Lush 3 has been the benchmark wearable vibrator for long-distance couples since 2021. Three years later, it still holds the title — here's why, and who should consider alternatives."
 scores:
@@ -29,9 +29,6 @@ scores:
   - name: "Value for Money"
     value: 8.5
 tags: [wearable, app-controlled, long-distance, couples, G-spot]
-related_guide_url: "/guides/couples-toys-guide/"
-related_guide_title: "The Best Couples Sex Toys: A Guide to Shared Pleasure"
-related_guide_desc: "How to choose a wearable, remote-controlled, or app-enabled toy that works for both partners."
 ---
 
 Long-distance relationships have always required creativity. The Lovense Lush 3 has spent the past several years being the most practical creative solution available — a wearable G-spot vibrator that can be controlled from anywhere on earth via smartphone.

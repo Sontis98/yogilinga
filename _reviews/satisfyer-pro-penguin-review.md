@@ -1,7 +1,6 @@
 ---
 title: "Satisfyer Pro Penguin Review: Cute Design, Serious Performance"
 date: 2025-05-26
-image: /assets/images/reviews/satisfyer-pro-penguin.jpg
 category: "Air Pulse · Satisfyer"
 brand: "Satisfyer"
 product_name: "Satisfyer Pro Penguin"
@@ -9,6 +8,8 @@ price: "$42"
 buy_url: "https://www.satisfyer.com/pro-penguin"
 buy_note: "Free shipping on orders over $50 · Discreet packaging"
 score: 8.2
+image: "/assets/images/reviews/satisfyer-pro-penguin-review.jpg"
+image_alt: "Satisfyer Pro Penguin review"
 read_time: 7
 author: "Sasha Mercer"
 excerpt: "The Satisfyer Pro Penguin wraps the same air pulse technology as the Pro 2 in a friendlier, more approachable design. Identical performance, easier recommendation for first-time buyers."

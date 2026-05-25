@@ -12,7 +12,7 @@ score: 9.1
 price: "$99"
 buy_url: "https://lovense.com/anal/hush-2"
 buy_note: "Free shipping · Discreet billing · 1-year warranty"
-image: /assets/images/reviews/lovense-hush-2.jpg
+image: "/assets/images/reviews/lovense-hush-2-review.jpg"
 image_alt: "Lovense Hush 2 vibrating butt plug"
 excerpt: "The Lovense Hush 2 is the best-selling app-controlled butt plug for a simple reason: it works reliably, vibrates powerfully, and uses the same long-distance app infrastructure as the rest of the Lovense lineup."
 scores:
@@ -29,9 +29,6 @@ scores:
   - name: "Value for Money"
     value: 9.2
 tags: [anal, butt-plug, app-controlled, vibrating, couples, solo, long-distance]
-related_guide_url: "/guides/anal-toys-beginners-guide/"
-related_guide_title: "Anal Toys for Beginners: Everything You Need to Start Safely"
-related_guide_desc: "Learn the rules for safe anal play — materials, sizing, and exactly how to use your first toy."
 ---
 
 The Lovense Hush launched in 2016 as one of the first app-controlled butt plugs on the market. The Hush 2 — released in 2021 — improved on the original with a longer battery life, stronger motor, and refined shape. It's been the benchmark in its category ever since.

@@ -12,7 +12,7 @@ score: 8.8
 price: "$109"
 buy_url: "https://lovense.com/vibrator/osci-2"
 buy_note: "Free shipping · Discreet billing · 1-year warranty"
-image: /assets/images/reviews/lovense-osci-2.jpg
+image: "/assets/images/reviews/lovense-osci-2-review.jpg"
 image_alt: "Lovense Osci 2 G-spot oscillating vibrator"
 excerpt: "The Lovense Osci 2 doesn't vibrate — it oscillates, creating a back-and-forth rocking motion against the G-spot. After testing dozens of G-spot toys, we found this approach uniquely effective for a subset of users."
 scores:
@@ -29,9 +29,6 @@ scores:
   - name: "Value for Money"
     value: 8.5
 tags: [G-spot, oscillating, internal, app-controlled, solo, unique]
-related_guide_url: "/guides/app-controlled-sex-toys-guide/"
-related_guide_title: "App-Controlled Sex Toys: The Complete 2026 Guide"
-related_guide_desc: "How Lovense, We-Vibe, and other app ecosystems compare — range, reliability, and partner features."
 ---
 
 Most internal vibrators vibrate. The Lovense Osci 2 oscillates — its tip rocks back and forth in a motion that mimics manual G-spot stimulation more closely than rotating or vibrating toys.

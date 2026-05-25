@@ -1,7 +1,6 @@
 ---
 title: "We-Vibe Wand 2 Review: Premium Wand Vibrator Worth the Price?"
 date: 2025-05-23
-image: /assets/images/reviews/we-vibe-wand-2.jpg
 category: "Wand · We-Vibe"
 brand: "We-Vibe"
 product_name: "We-Vibe Wand 2"
@@ -9,6 +8,8 @@ price: "$149"
 buy_url: "https://www.we-vibe.com/wand-2"
 buy_note: "Free shipping · Discreet packaging · 2-year warranty"
 score: 8.8
+image: "/assets/images/reviews/we-vibe-wand-2-review.jpg"
+image_alt: "We-Vibe Wand 2 review"
 read_time: 9
 author: "Rowan Ellis"
 excerpt: "The We-Vibe Wand 2 brings premium silicone construction and app connectivity to the wand vibrator category. Deep, powerful stimulation with a more refined design than the classic Magic Wand."
@@ -23,9 +24,6 @@ scores:
     value: 8
   - name: "Value"
     value: 8
-related_guide_url: "/guides/lubricant-guide/"
-related_guide_title: "The Complete Guide to Personal Lubricants"
-related_guide_desc: "Which lube is safe with your toy — water-based vs silicone vs oil, ingredient warnings, and top picks."
 ---
 
 Wand vibrators have been dominated by the Hitachi Magic Wand for decades. The We-Vibe Wand 2 doesn't dethrone it — the Magic Wand's motor is still a benchmark — but it makes a strong case for $149 over the Magic Wand Original's lower price point.

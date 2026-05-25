@@ -1,7 +1,6 @@
 ---
 title: "Womanizer OG Review: Air Pulse Meets G-Spot Stimulation"
 date: 2025-06-02
-image: /assets/images/reviews/womanizer-og.jpg
 category: "G-Spot · Womanizer"
 brand: "Womanizer"
 product_name: "Womanizer OG"
@@ -9,6 +8,8 @@ price: "$189"
 buy_url: "https://www.womanizer.com/og"
 buy_note: "Free shipping · Discreet packaging · 2-year warranty"
 score: 8.8
+image: "/assets/images/reviews/womanizer-og-review.jpg"
+image_alt: "Womanizer OG review"
 read_time: 9
 author: "Rowan Ellis"
 excerpt: "The Womanizer OG applies Pleasure Air technology to G-spot stimulation — an entirely new sensation category. For users who haven't responded to traditional G-spot vibrators, the OG is worth serious consideration."

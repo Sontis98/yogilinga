@@ -1,7 +1,6 @@
 ---
 title: "Satisfyer Curvy 1+ Review: Air Pulse + Vibration Combined"
 date: 2025-05-27
-image: /assets/images/reviews/satisfyer-curvy-1-plus.jpg
 category: "Air Pulse · Satisfyer"
 brand: "Satisfyer"
 product_name: "Satisfyer Curvy 1+"
@@ -9,6 +8,8 @@ price: "$55"
 buy_url: "https://www.satisfyer.com/curvy-1-plus"
 buy_note: "Free shipping on orders over $50 · Discreet packaging"
 score: 8.5
+image: "/assets/images/reviews/satisfyer-curvy-1-plus-review.jpg"
+image_alt: "Satisfyer Curvy 1+ review"
 read_time: 8
 author: "Rowan Ellis"
 excerpt: "The Satisfyer Curvy 1+ combines air pulse stimulation with traditional vibration in one toy — and adds app control. The best mid-range Satisfyer for users who want both sensation types."
@@ -23,9 +24,6 @@ scores:
     value: 8.5
   - name: "Noise Level"
     value: 7.5
-related_guide_url: "/guides/how-to-choose-first-vibrator/"
-related_guide_title: "How to Choose Your First Vibrator: The No-Nonsense Guide"
-related_guide_desc: "Body-safe materials, stimulation types, and the brands worth trusting — everything a first-time buyer needs."
 ---
 
 The Satisfyer Curvy 1+ is a step up from the entry-level Pro 2 and Pro Penguin in two significant ways: it adds a vibration motor alongside the air pulse mechanism, and it adds app connectivity for partner control.

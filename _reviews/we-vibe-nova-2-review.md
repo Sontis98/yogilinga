@@ -1,7 +1,6 @@
 ---
 title: "We-Vibe Nova 2 Review: The Flexible Rabbit Vibrator That Actually Fits"
 date: 2025-05-24
-image: /assets/images/reviews/we-vibe-nova-2.jpg
 category: "Rabbit · We-Vibe"
 brand: "We-Vibe"
 product_name: "We-Vibe Nova 2"
@@ -9,6 +8,8 @@ price: "$139"
 buy_url: "https://www.we-vibe.com/nova-2"
 buy_note: "Free shipping · Discreet packaging · 2-year warranty"
 score: 8.6
+image: "/assets/images/reviews/we-vibe-nova-2-review.jpg"
+image_alt: "We-Vibe Nova 2 review"
 read_time: 9
 author: "Sasha Mercer"
 excerpt: "The We-Vibe Nova 2 solves the rabbit vibrator's biggest problem: the clitoral arm actually stays in contact during thrusting. A thoughtfully engineered dual-stimulation toy."
@@ -23,9 +24,6 @@ scores:
     value: 8
   - name: "Value"
     value: 8
-related_guide_url: "/guides/lubricant-guide/"
-related_guide_title: "The Complete Guide to Personal Lubricants"
-related_guide_desc: "Which lube is safe with your toy — water-based vs silicone vs oil, ingredient warnings, and top picks."
 ---
 
 The traditional rabbit vibrator has an engineering problem: the clitoral arm loses contact during movement. As you thrust, the arm shifts, and the stimulation disappears. Most rabbit vibrators solve this inconsistently or not at all.

@@ -1,7 +1,6 @@
 ---
 title: "Dame Eva II Review: Hands-Free Couples Vibrator That Stays in Place"
 date: 2025-06-04
-image: /assets/images/reviews/dame-eva-2.jpg
 category: "Couples · Dame"
 brand: "Dame Products"
 product_name: "Dame Eva II"
@@ -9,6 +8,8 @@ price: "$135"
 buy_url: "https://www.dameproducts.com/eva-ii"
 buy_note: "Free shipping · Discreet packaging · 1-year warranty"
 score: 8.4
+image: "/assets/images/reviews/dame-eva-2-review.jpg"
+image_alt: "Dame Eva II review"
 read_time: 9
 author: "Rowan Ellis"
 excerpt: "The Dame Eva II is the most elegant solution to hands-free couples vibration — flexible wings that anchor to the labia keep it in place during sex without harness or underwear. Genuinely clever design."
@@ -23,9 +24,6 @@ scores:
     value: 8
   - name: "Value"
     value: 8
-related_guide_url: "/guides/couples-toys-guide/"
-related_guide_title: "The Best Couples Sex Toys: A Guide to Shared Pleasure"
-related_guide_desc: "How to choose a wearable, remote-controlled, or app-enabled toy that works for both partners."
 ---
 
 The Dame Eva II solves an engineering problem that few sex toys have seriously attempted: external clitoral vibration during penetrative sex, hands-free, without underwear or a harness.

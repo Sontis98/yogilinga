@@ -1,7 +1,6 @@
 ---
 title: "Dame Pom Review: The Flexible Clitoral Vibrator That Molds to You"
 date: 2025-06-07
-image: /assets/images/reviews/dame-pom.jpg
 category: "Clitoral · Dame"
 brand: "Dame Products"
 product_name: "Dame Pom"
@@ -9,6 +8,8 @@ price: "$95"
 buy_url: "https://www.dameproducts.com/pom"
 buy_note: "Free shipping · Discreet packaging · 1-year warranty"
 score: 8.5
+image: "/assets/images/reviews/dame-pom-review.jpg"
+image_alt: "Dame Pom review"
 read_time: 8
 author: "Rowan Ellis"
 excerpt: "The Dame Pom's flexible, squeezable body is the key innovation — it molds to any anatomy for consistent clitoral contact. Excellent motor, intuitive controls, and a design that works where rigid toys fail."
@@ -23,9 +24,6 @@ scores:
     value: 9
   - name: "Value"
     value: 8.5
-related_guide_url: "/guides/how-to-choose-first-vibrator/"
-related_guide_title: "How to Choose Your First Vibrator: The No-Nonsense Guide"
-related_guide_desc: "Body-safe materials, stimulation types, and the brands worth trusting — everything a first-time buyer needs."
 ---
 
 The Dame Pom's premise is straightforward: a fully flexible body that conforms to whatever anatomy it's pressed against. No rigid edges, no fixed angles — the Pom bends and molds in any direction, maintaining contact with the clitoris regardless of body position or anatomy variation.
