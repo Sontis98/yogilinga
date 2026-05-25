@@ -2,7 +2,7 @@
 layout: default
 ---
 
-<!-- Schema.org Review JSON-LD -->
+<!-- Schema.org Review JSON-LD — Google Rich Results -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -10,8 +10,15 @@ layout: default
   "name": "{{ page.title | escape }}",
   "description": "{{ page.excerpt | default: page.title | strip_html | truncate: 155 | escape }}",
   "datePublished": "{{ page.date | date_to_xmlschema }}",
-  "author": { "@type": "Person", "name": "{{ page.author | default: site.author }}" },
-  "publisher": { "@type": "Organization", "name": "{{ site.title }}", "url": "{{ site.url }}{{ site.baseurl }}" },
+  "author": {
+    "@type": "Person",
+    "name": "{{ page.author | default: site.author }}"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "{{ site.title }}",
+    "url": "{{ site.url }}{{ site.baseurl }}"
+  },
   "reviewRating": {
     "@type": "Rating",
     "ratingValue": "{{ page.score | default: 8 }}",
@@ -21,7 +28,10 @@ layout: default
   "itemReviewed": {
     "@type": "Product",
     "name": "{{ page.product_name | default: page.brand | default: page.title | escape }}",
-    "brand": { "@type": "Brand", "name": "{{ page.brand | default: '' }}" }
+    "brand": {
+      "@type": "Brand",
+      "name": "{{ page.brand | default: '' }}"
+    }
   }
 }
 </script>
@@ -29,7 +39,7 @@ layout: default
 <article itemscope itemtype="https://schema.org/Review">
 
   <header class="article-header">
-    <p class="article-category">{{ page.brand | upcase }} · REVIEW</p>
+    <p class="article-category">{{ page.category | upcase }} · REVIEW</p>
     <h1 class="article-title" itemprop="name">{{ page.title }}</h1>
     <div class="article-meta">
       <span itemprop="author">{{ page.author | default: site.author }}</span>
@@ -39,22 +49,22 @@ layout: default
     </div>
   </header>
 
+  <div class="content-light-wrap">
+
   {% if page.image %}
   <div class="article-hero-img">
     <img src="{{ page.image | relative_url }}" alt="{{ page.title }}" loading="lazy">
   </div>
   {% endif %}
 
-  <!-- AD SLOT: Top of review (rectangle, 300x250 or responsive) -->
-  <!-- Replace with AdSense code once approved -->
-  <div class="ad-slot" id="ad-review-top" aria-hidden="true"></div>
-
   <div class="article-body">
 
+    <!-- FTC Affiliate Disclosure -->
     <div class="affiliate-note">
-      <strong>FTC Disclosure:</strong> We independently research and test every product. This review contains affiliate links — if you buy through them, we earn a small commission at no extra cost to you. Our scores and opinions are never influenced by brands. <a href="{{ '/affiliate-disclosure/' | relative_url }}">Learn more</a>
+      <strong>FTC Disclosure:</strong> We independently research and test every product. This review contains affiliate links — if you buy through them, we earn a small commission at no extra cost to you. Our scores and opinions are never influenced by brands. <a href="/affiliate-disclosure">Learn more</a>
     </div>
 
+    <!-- SCORECARD -->
     {% if page.scores %}
     <div class="review-scorecard">
       <div class="scorecard-header">
@@ -83,11 +93,12 @@ layout: default
 
     {{ content }}
 
+    <!-- BUY BOX -->
     {% if page.buy_url %}
     <div class="buy-box">
       <div class="buy-box-info">
         <h4>{{ page.product_name | default: page.title }}</h4>
-        <p>{{ page.buy_note | default: "Free US shipping · Discreet packaging guaranteed · Official retailer" }}</p>
+        <p>{{ page.buy_note | default: "Available with free US shipping · Discreet packaging guaranteed" }}</p>
       </div>
       <div style="display: flex; align-items: center; gap: 1.5rem; flex-wrap: wrap;">
         {% if page.price %}<span class="buy-box-price">{{ page.price }}</span>{% endif %}
@@ -98,73 +109,7 @@ layout: default
     </div>
     {% endif %}
 
-    <!-- Related Guide Box -->
-    {% if page.related_guide_url %}
-    <div class="related-guide-box">
-      <span class="related-guide-tag">📖 Buying Guide</span>
-      <h3 class="related-guide-title">{{ page.related_guide_title }}</h3>
-      <p class="related-guide-desc">{{ page.related_guide_desc | default: "Everything you need to know before buying — materials, features, and honest recommendations." }}</p>
-      <a href="{{ page.related_guide_url | relative_url }}" class="related-guide-link">Read the full guide →</a>
-    </div>
-    {% endif %}
-
-    <!-- AD SLOT: Mid-review (responsive) -->
-    <div class="ad-slot" id="ad-review-mid" aria-hidden="true"></div>
-
-    <!-- Newsletter inline CTA -->
-    <div style="margin: 2.5rem 0; padding: 2rem 2rem; background: rgba(201,149,108,0.05); border: 0.5px solid rgba(201,149,108,0.2); text-align: center;">
-      <p style="font-size: 0.62rem; letter-spacing: 0.25em; text-transform: uppercase; color: var(--rose-gold); margin-bottom: 0.6rem;">Free Newsletter</p>
-      <p style="font-family: var(--font-serif); font-size: 1.3rem; font-weight: 300; color: var(--cream); margin-bottom: 0.5rem;">New reviews, every week.</p>
-      <p style="font-size: 0.8rem; color: var(--cream-dim); margin-bottom: 1.25rem;">Get our latest picks and buying guides — no spam, unsubscribe anytime.</p>
-      <form onsubmit="handleNewsletterSubmit(event)" style="display:flex; gap:0; max-width:420px; margin:0 auto;">
-        <input type="email" placeholder="your@email.com" required
-          style="flex:1; background:rgba(255,255,255,0.05); border:0.5px solid rgba(201,149,108,0.4); border-right:none; color:var(--cream); font-family:var(--font-sans); font-size:0.85rem; padding:12px 16px; outline:none;">
-        <button type="submit"
-          style="background:linear-gradient(135deg,#C9956C,#E8B89A); color:var(--wine-deep); border:none; padding:12px 22px; font-family:var(--font-sans); font-size:0.65rem; font-weight:500; letter-spacing:0.18em; text-transform:uppercase; cursor:pointer; white-space:nowrap;">
-          Subscribe
-        </button>
-      </form>
-    </div>
-
   </div>
 
-  <!-- More from this Brand -->
-  {% assign brand_reviews = site.reviews | where: "brand", page.brand | where_exp: "r", "r.url != page.url" | sort: "score" | reverse | limit: 3 %}
-  {% if brand_reviews.size > 0 %}
-  <div class="section-wrap" style="padding-top: 0;">
-    <div class="section-header">
-      <h2 class="section-title">More {{ page.brand }} Reviews</h2>
-      <a href="{{ '/reviews/' | relative_url }}" class="section-link">All reviews →</a>
-    </div>
-    <div class="cards-grid">
-      {% for review in brand_reviews %}
-      <a href="{{ review.url | relative_url }}" class="card" style="text-decoration: none;">
-        {% if review.image %}
-        <div class="card-thumb">
-          <img src="{{ review.image | relative_url }}" alt="{{ review.title }}" loading="lazy">
-        </div>
-        {% else %}
-        <div class="card-thumb-placeholder card-thumb-1"><span class="card-icon-letter">✦</span></div>
-        {% endif %}
-        <div class="card-body">
-          <div style="display: flex; justify-content: space-between; align-items: center;">
-            <p class="card-tag">{{ review.brand }}</p>
-            {% if review.score %}<span class="score-badge">{{ review.score }}/10</span>{% endif %}
-          </div>
-          <h3 class="card-title">{{ review.product_name | default: review.title }}</h3>
-          <p class="card-excerpt">{{ review.excerpt | strip_html | truncate: 100 }}</p>
-          <div class="card-meta">
-            <span>{{ review.date | date: "%b %-d, %Y" }}</span>
-            <span class="card-read-more">Read review →</span>
-          </div>
-        </div>
-      </a>
-      {% endfor %}
-    </div>
-  </div>
-  {% endif %}
-
-  <!-- AD SLOT: Below-fold (leaderboard 728x90 or responsive) -->
-  <div class="ad-slot" id="ad-review-bottom" aria-hidden="true"></div>
-
+  </div><!-- /content-light-wrap -->
 </article>

@@ -2,7 +2,7 @@
 layout: post
 title: "How to Clean Sex Toys Properly: A Complete Guide by Material"
 date: 2025-05-21
-image: /assets/images/blog/how-to-clean-sex-toys.jpg
+image: "/assets/images/blog/cleaning-guide.jpg"
 author: "Editorial Team"
 category: "wellness"
 read_time: 6
@@ -12,26 +12,6 @@ tags: [hygiene, cleaning, guide, safety, maintenance]
 ---
 
 Cleaning sex toys sounds like it should be simple. It mostly is, with one complication: different materials require different approaches, and using the wrong method can damage the toy, degrade its material, or — worst — leave it less hygienic than before you started.
-
-<div class="stat-row">
-  <div class="stat-box">
-    <p class="stat-number">3 min</p>
-    <p class="stat-label">Boiling time to fully sterilize non-motorized silicone, glass, or steel</p>
-  </div>
-  <div class="stat-box">
-    <p class="stat-number">70%</p>
-    <p class="stat-label">Minimum isopropyl concentration that's bactericidal on toy surfaces</p>
-  </div>
-  <div class="stat-box">
-    <p class="stat-number">Never</p>
-    <p class="stat-label">Use silicone lube on silicone toys — it permanently damages the material</p>
-  </div>
-</div>
-
-<div class="callout callout-warning">
-  <span class="callout-label">Common Mistake</span>
-  <strong>Never fully submerge motorized toys</strong> even if they're labeled "waterproof." Waterproof means splash/shower-safe, not submersion-safe. Water that enters the charging port or seams causes motor failure and can create electrical hazards.
-</div>
 
 This guide covers everything you need to know, organized by material.
 
@@ -44,10 +24,6 @@ Other materials are **porous** — they have microscopic channels that trap biol
 The method you use should match the material.
 
 ## Cleaning by Material
-
-<div class="article-hero-img" style="margin:2rem 0;"><img src="/assets/images/blog/inline/cleaning-guide.jpg" alt="Complete guide to cleaning sex toys by material" loading="lazy" style="width:100%;border-radius:0;"></div>
-
-
 
 ### Platinum-Cured Silicone (No Electronics)
 

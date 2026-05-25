@@ -2,7 +2,7 @@
 layout: post
 title: "Lovense App Review 2025: Features, Reliability, and Honest Pros & Cons"
 date: 2025-05-29
-image: /assets/images/blog/lovense-app-review.jpg
+image: "/assets/images/blog/vibration-science.jpg"
 author: "Editorial Team"
 category: "guides"
 read_time: 8
@@ -12,26 +12,6 @@ tags: [lovense, app, review, long-distance, technology]
 ---
 
 When people choose Lovense over competitors, they're usually not choosing the hardware — they're choosing the app. The Lovense Remote app has been in continuous development since 2013, and the gap between it and competing apps is measurable and significant.
-
-<div class="stat-row">
-  <div class="stat-box">
-    <p class="stat-number">4.3★</p>
-    <p class="stat-label">Lovense Remote app rating — App Store (May 2026)</p>
-  </div>
-  <div class="stat-box">
-    <p class="stat-number">~20ms</p>
-    <p class="stat-label">Average Bluetooth latency in our testing</p>
-  </div>
-  <div class="stat-box">
-    <p class="stat-number">Long-range</p>
-    <p class="stat-label">Via Lovense Connect — unlimited global distance over internet</p>
-  </div>
-</div>
-
-<div class="callout">
-  <span class="callout-label">App vs Bluetooth</span>
-  Lovense offers two modes: <strong>Bluetooth direct</strong> (phone must be nearby, ~10m range, lowest latency) and <strong>Lovense Connect</strong> (internet-based, unlimited range, slight latency increase). Long-distance couples need Lovense Connect — make sure both partners download it, not just "Lovense Remote."
-</div>
 
 After two years of daily use across iOS and Android devices, multiple Lovense toys, and both local and long-distance testing, here's our complete assessment.
 
