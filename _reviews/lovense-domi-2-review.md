@@ -10,7 +10,7 @@ read_time: 8
 affiliate: true
 score: 8.7
 price: "$89"
-buy_url: "https://lovense.com/vibrator/domi-2"
+buy_url: "https://www.lovense.com/r/7o7l34"
 buy_note: "Free shipping · Discreet billing · 1-year warranty"
 image: "/assets/images/reviews/lovense-domi-2-review.jpg"
 image_alt: "Lovense Domi 2 wand vibrator"

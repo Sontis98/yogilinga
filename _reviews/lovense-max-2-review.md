@@ -10,7 +10,7 @@ read_time: 10
 affiliate: true
 score: 9.0
 price: "$99"
-buy_url: "https://lovense.com/male-toy/max-2"
+buy_url: "https://www.lovense.com/r/qwxa52"
 buy_note: "Free shipping · Discreet billing · 1-year warranty"
 image: "/assets/images/reviews/lovense-max-2-review.jpg"
 image_alt: "Lovense Max 2 male masturbator"

@@ -10,7 +10,7 @@ read_time: 10
 affiliate: true
 score: 9.2
 price: "$119"
-buy_url: "https://lovense.com/anal/edge-2"
+buy_url: "https://www.lovense.com/r/tks6y2"
 buy_note: "Free shipping · Discreet billing · 1-year warranty"
 image: "/assets/images/reviews/lovense-edge-2-review.jpg"
 image_alt: "Lovense Edge 2 prostate massager"

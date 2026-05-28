@@ -10,7 +10,7 @@ read_time: 9
 affiliate: true
 score: 8.8
 price: "$109"
-buy_url: "https://lovense.com/vibrator/osci-2"
+buy_url: "https://www.lovense.com/r/wotgjp"
 buy_note: "Free shipping · Discreet billing · 1-year warranty"
 image: "/assets/images/reviews/lovense-osci-2-review.jpg"
 image_alt: "Lovense Osci 2 G-spot oscillating vibrator"

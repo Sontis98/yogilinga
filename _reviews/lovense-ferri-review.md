@@ -10,7 +10,7 @@ read_time: 9
 affiliate: true
 score: 8.6
 price: "$99"
-buy_url: "https://lovense.com/vibrator/ferri"
+buy_url: "https://www.lovense.com/r/3e42fi"
 buy_note: "Free shipping · Discreet billing · 1-year warranty"
 image: "/assets/images/reviews/lovense-ferri-review.jpg"
 image_alt: "Lovense Ferri magnetic panty vibrator"

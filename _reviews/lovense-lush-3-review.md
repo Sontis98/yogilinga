@@ -10,7 +10,7 @@ read_time: 10
 affiliate: true
 score: 9.0
 price: "$119"
-buy_url: "https://example-affiliate-link.com/lovense-lush-3"
+buy_url: "https://www.lovense.com/r/rtg7ej"
 buy_note: "Free shipping · 1-year warranty · Discreet billing"
 image: "/assets/images/reviews/lovense-lush-3-review.jpg"
 image_alt: "Lovense Lush 3 wearable vibrator on neutral background"

@@ -10,7 +10,7 @@ read_time: 9
 affiliate: true
 score: 9.1
 price: "$99"
-buy_url: "https://lovense.com/anal/hush-2"
+buy_url: "https://www.lovense.com/r/9zhq54"
 buy_note: "Free shipping · Discreet billing · 1-year warranty"
 image: "/assets/images/reviews/lovense-hush-2-review.jpg"
 image_alt: "Lovense Hush 2 vibrating butt plug"

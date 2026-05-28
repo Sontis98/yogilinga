@@ -10,7 +10,7 @@ read_time: 10
 affiliate: true
 score: 9.0
 price: "$119"
-buy_url: "https://lovense.com/vibrator/nora"
+buy_url: "https://www.lovense.com/r/vx5cjf"
 buy_note: "Free shipping · Discreet billing · 1-year warranty"
 image: "/assets/images/reviews/lovense-nora-review.jpg"
 image_alt: "Lovense Nora rabbit vibrator on neutral background"
